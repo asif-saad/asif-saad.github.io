@@ -1,0 +1,148 @@
+OPERATING SYSTEM:
+What is the role of a file system in an OS? How does an OS manage file permissions?
+explain the differences between FAT32, NTFS, and ext4 file systems?
+What are the different methods for IPC (e.g., pipes, shared memory, message queues)?
+How does multi-level feedback queue scheduling optimize CPU utilization?
+What challenges arise in terms of synchronization and resource management in distributed systems?
+Translation Lookaside Buffer (TLB) in memory paging.
+How does the OS manage PCBs during process creation and termination?
+What are system calls, and how do they act as the interface between the OS and hardware?
+Compare internal and external fragmentation, and discuss solutions like compaction and paging.
+What are the different RAID levels, and how do they improve redundancy and performance?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALGORITHM ANALYSIS AND DESIGN
+Knuth-Morris-Pratt (KMP) algorithm.
+amortized analysis.
+NP-complete, NP-hard, NP problem.
+Turing machine mechanism.
+Compare algorithms that optimize for time complexity versus space complexity.
+What is the significance of the P vs NP problem?
+Explain how heuristic algorithms are used in optimization problems. 
+Traveling Salesman Problem.
+Fibonacci sequence.
+How do you handle trade-offs between time complexity and space complexity in algorithm design?
+difference between Las Vegas and Monte Carlo algorithms?
+What are bit manipulation algorithms?
+Huffman coding play in data compression.
+Binary Search or Ternary Search optimize searching.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DATA STRUCTURE
+implement a stack using a linked list.
+AVL Trees.
+How are heaps used in priority queues.
+explain techniques like chaining and open addressing.
+Red-Black Trees.
+explain the use of segment trees in range query problems.
+Double-Ended Queue (Deque).
+Explain the operations and use cases of a deque.
+How does a deque differ from a queue?
+B-Trees and B+ Trees.
+In what scenarios choose Bellman-Ford over Dijkstra?
+Balanced vs Unbalanced Trees.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

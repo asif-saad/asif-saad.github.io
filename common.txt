@@ -1,0 +1,129 @@
+OPERATING SYSTEM:
+What is the difference between a process and a thread?
+How does context switching work between processes, and what overheads are involved?
+Explain how paging and segmentation work in memory management.
+What are the pros and cons of virtual memory?
+How does semaphores and mutexes work?
+What are the necessary conditions for deadlock to occur?
+How would you handle deadlock prevention and detection in an OS?
+How do you ensure synchronization between processes in a shared memory system?
+Compare various CPU scheduling algorithms (e.g., FCFS, Round Robin, Priority Scheduling).
+Explain DMA.
+How does virtualization work in modern operating systems?
+What distinguishes an RTOS from a general-purpose OS?
+Various types of kernel architecture and their differences.
+Process Control Block (PCB).
+Difference between user-mode and kernel-mode execution?
+Memory Fragmentation.
+How does the OS manage load balancing in multi-core systems?
+
+
+
+
+
+
+
+
+
+
+
+
+ALGORITHM ANALYSIS AND DESIGN
+Divide and Conquer.
+Sorting algos and their pros and cons individually.
+Greedy Algorithms.
+key differences between dynamic programming and divide-and-conquer strategies.
+concept of memoization.
+What is backtracking, and when would you use it?
+Explain the difference between Prim’s and Kruskal’s algorithms for finding the minimum spanning tree.
+How does Floyd-Warshall differ from Dijkstra for shortest path problems?
+Time Complexity.
+Space Complexity.
+What are the differences between best-case, worst-case, and average-case time complexities?
+Heuristic Algorithms.
+Brute Force Algorithms.
+ advantages and disadvantages of recursive algorithms?
+How does the branch-and-bound technique work for solving optimization problems?
+0/1 Knapsack, Fractional Knapsack
+Binary Search.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DATA STRUCTURE
+Arrays and Linked Lists.
+How do arrays differ from linked lists in terms of memory allocation and access speed?
+In what scenarios would you choose a linked list over an array?
+Stacks and Queues.
+explain the difference between stacks and queues, and provide real-world use cases for each?
+Binary Trees.
+differences between a min-heap and a max-heap.
+Hashing.
+How do hash tables handle collisions?
+depth-first search (DFS) and breadth-first search (BFS) in graph traversal.
+Compare the time complexity of different sorting algorithms (e.g., QuickSort vs MergeSort) with respect to data structures.
+Circular Linked Lists.
+What are the advantages of circular linked lists?
+implement a circular queue using a circular linked list.
+Adjacency Matrix vs Adjacency List.
+When is an adjacency matrix preferable?
+differences between Dijkstra and Bellman-Ford algorithms in graph traversal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
