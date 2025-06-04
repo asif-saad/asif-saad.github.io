@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #181c24;
+  color: #e7eaf0;
+}
+.topnav {
+  width: 100%;
+  background: #232836;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.topnav a {
+  color: #e7eaf0;
+  text-decoration: none;
+  padding: 1.1rem 1.3rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  border-radius: 3px 3px 0 0;
+}
+.topnav a:hover, .topnav a.active {
+  background: #181c24;
+  color: #6cb2ff;
+}
+.main-wrapper {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+.sidebar {
+  width: 320px;
+  background: #232836;
+  padding: 32px 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #232836;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 220px;
+}
+.profile-card {
+  background: #232836;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.14);
+  padding: 24px 18px 18px 18px;
+  text-align: center;
+  width: 100%;
+  max-width: 260px;
+  margin-bottom: 32px;
+}
+.profile-card img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  border: 4px solid #232836;
+  background: #181c24;
+}
+.profile-card h1 { font-size: 1.3rem; margin: 0 0 8px 0; color: #fff; }
+.profile-card h2 { font-size: 1rem; font-weight: 400; color: #a0b3d6; margin: 0 0 12px 0; }
+.profile-card p { font-size: 0.98rem; color: #b2b9c9; margin: 0 0 10px 0; }
+.contact-info { margin-top: 18px; font-size: 0.97rem; color: #e7eaf0; }
+.contact-info a { color: #6cb2ff; text-decoration: none; word-break: break-all; }
+.contact-info a:hover { text-decoration: underline; }
+.content {
+  flex: 1 1 0;
+  padding: 40px 60px 40px 60px;
+  background: #181c24;
+  min-width: 0;
+}
+section { margin-bottom: 2.5rem; max-width: 980px; margin-left: auto; margin-right: auto; }
+section h2 {
+  color: #6cb2ff;
+  font-size: 1.35rem;
+  margin-bottom: 0.7rem;
+  border-left: 4px solid #232836;
+  padding-left: 0.5rem;
+  font-weight: 500;
+}
+ul, ol { padding-left: 1.2rem; }
+li { margin-bottom: 0.4rem; }
+@media (max-width: 900px) {
+  .main-wrapper { flex-direction: column; }
+  .sidebar { width: 100%; min-width: unset; border-right: none; border-bottom: 1px solid #232836; flex-direction: row; justify-content: center; }
+  .profile-card { margin-bottom: 0; }
+  .content { padding: 28px 10px; }
+}
+@media (max-width: 600px) {
+  .sidebar { flex-direction: column; align-items: center; }
+  .content { padding: 12px 2px; }
+  .profile-card { padding: 12px 6px; }
+}
