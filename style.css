@@ -1,9 +1,13 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   background: #181c24;
   color: #e7eaf0;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  line-height: 1.7;
 }
+
 .topnav {
   width: 100%;
   background: #232836;
@@ -13,12 +17,13 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
+  flex-wrap: wrap;
 }
 .topnav a {
   color: #e7eaf0;
   text-decoration: none;
   padding: 1.1rem 1.3rem;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 500;
   background: none;
   border: none;
@@ -26,6 +31,9 @@ body {
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
   border-radius: 3px 3px 0 0;
+  display: block;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
 }
 .topnav a:hover, .topnav a.active {
   background: #181c24;
@@ -67,10 +75,10 @@ body {
   border: 4px solid #232836;
   background: #181c24;
 }
-.profile-card h1 { font-size: 1.3rem; margin: 0 0 8px 0; color: #fff; }
-.profile-card h2 { font-size: 1rem; font-weight: 400; color: #a0b3d6; margin: 0 0 12px 0; }
-.profile-card p { font-size: 0.98rem; color: #b2b9c9; margin: 0 0 10px 0; }
-.contact-info { margin-top: 18px; font-size: 0.97rem; color: #e7eaf0; }
+.profile-card h1 { font-size: 1.4rem; margin: 0 0 8px 0; color: #fff; font-weight: 700;}
+.profile-card h2 { font-size: 1.08rem; font-weight: 400; color: #a0b3d6; margin: 0 0 12px 0; }
+.profile-card p { font-size: 1.01rem; color: #b2b9c9; margin: 0 0 10px 0; }
+.contact-info { margin-top: 18px; font-size: 1rem; color: #e7eaf0; }
 .contact-info a { color: #6cb2ff; text-decoration: none; word-break: break-all; }
 .contact-info a:hover { text-decoration: underline; }
 .content {
@@ -82,11 +90,12 @@ body {
 section { margin-bottom: 2.5rem; max-width: 980px; margin-left: auto; margin-right: auto; }
 section h2 {
   color: #6cb2ff;
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   margin-bottom: 0.7rem;
   border-left: 4px solid #232836;
   padding-left: 0.5rem;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 ul, ol { padding-left: 1.2rem; }
 li { margin-bottom: 0.4rem; }
@@ -100,4 +109,37 @@ li { margin-bottom: 0.4rem; }
   .sidebar { flex-direction: column; align-items: center; }
   .content { padding: 12px 2px; }
   .profile-card { padding: 12px 6px; }
+}
+
+/* Make images and videos scale with the screen */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make sure all content boxes scale */
+.container, .content, main, section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* Responsive navigation bar */
+@media (max-width: 600px) {
+  body {
+    font-size: 17px;
+  }
+  header, nav, main, footer {
+    padding: 10px;
+  }
+  .topnav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .topnav a {
+    padding: 0.8rem 0.8rem;
+    font-size: 1.08rem;
+    border-radius: 0;
+    text-align: left;
+  }
 }
