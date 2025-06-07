@@ -20,17 +20,17 @@ body {
   left: 0;
   height: 100px;
   z-index: 1000;
-  flex-wrap: nowrap; /* Prevent wrap on desktop */
+  flex-wrap: nowrap;
   padding-left: 500px; /* Sidebar width on desktop */
-  gap: 24px;
   box-sizing: border-box;
   transition: padding-left 0.3s;
-  overflow-x: auto; /* Allow horizontal scroll if needed */
+  overflow-x: auto;
 }
+
 .topnav a {
   color: #e7eaf0;
   text-decoration: none;
-  padding: 1.5rem 1.5rem;
+  padding: 2rem 2.5rem;
   font-size: 1.3rem;
   font-weight: 500;
   background: none;
@@ -58,13 +58,15 @@ body {
   transition: padding-top 0.3s;
 }
 
-/* Fixed Sidebar (Desktop) */
+/* Fixed Sidebar (Desktop, always fixed width, no horizontal scroll) */
 .sidebar {
   position: fixed;
   top: 100px; /* Must match .topnav height */
   left: 0;
   height: calc(100vh - 100px);
   width: 500px;
+  min-width: 500px;
+  max-width: 500px;
   background: #232836;
   padding: 32px 20px;
   box-sizing: border-box;
@@ -72,10 +74,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 220px;
   z-index: 101;
+  overflow-x: hidden;  /* Prevent horizontal scroll */
   overflow-y: auto;
   transition: width 0.3s, top 0.3s;
+}
+
+/* Ensure all sidebar content fits */
+.profile-card, .sidebar img, .sidebar .profile-card {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .profile-card {
@@ -85,12 +94,13 @@ body {
   padding: 24px 18px 18px 18px;
   text-align: center;
   width: 100%;
-  max-width: 1000px;
+  max-width: 100%;
   margin-bottom: 32px;
 }
 .profile-card img {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 16px;
@@ -134,7 +144,11 @@ li { margin-bottom: 0.4rem; }
 /* For screens below 1200px: sidebar and nav adjust */
 @media (max-width: 1200px) {
   .topnav { padding-left: 300px; }
-  .sidebar { width: 300px; }
+  .sidebar {
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+  }
   .content { margin-left: 310px; }
 }
 
@@ -149,13 +163,15 @@ li { margin-bottom: 0.4rem; }
   .sidebar {
     position: static;
     width: 100%;
-    min-width: unset;
+    min-width: 0;
+    max-width: 100%;
     border-right: none;
     border-bottom: 1px solid #232836;
     flex-direction: row;
     justify-content: center;
     height: auto;
     overflow-y: visible;
+    overflow-x: hidden;
     top: 0;
     padding: 24px 8px;
   }
@@ -177,7 +193,7 @@ li { margin-bottom: 0.4rem; }
     height: auto;
     box-shadow: none;
     border-bottom: 1px solid #232836;
-    flex-wrap: wrap; /* Allow wrap! */
+    flex-wrap: wrap;
     overflow-x: visible;
   }
   .topnav a {
