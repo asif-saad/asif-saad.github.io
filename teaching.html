@@ -6,16 +6,56 @@
   <title>Asif Mohammed Saad | Teaching</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Additional styling for better teaching section appearance */
+    .teaching-header {
+      text-align: left;
+      margin-bottom: 0.2em;
+    }
+    .teaching-university {
+      color: #a0b3d6;
+      font-size: 1.15rem;
+      font-weight: 400;
+      margin-bottom: 2em;
+      margin-top: 0;
+    }
+    .semester-card {
+      background: #232836;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+      padding: 1.5em 1.5em 1em 1.5em;
+      margin-bottom: 1.8em;
+      border-left: 5px solid #6cb2ff;
+      max-width: 600px;
+    }
+    .semester-title {
+      color: #6cb2ff;
+      font-size: 1.15rem;
+      margin-bottom: 0.7em;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    .semester-card ul {
+      margin: 0;
+      padding-left: 1.3em;
+    }
+    @media (max-width: 700px) {
+      .semester-card {
+        padding: 1em 0.8em 0.8em 1em;
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
   <nav class="topnav">
     <a href="index.html">Home</a>
-    <a href="cv.html">CV</a>
+    <!-- <a href="cv.html">CV</a> -->
     <a href="research.html">Research</a>
-    <a href="projects.html">Projects</a>
+    <!-- <a href="projects.html">Projects</a> -->
     <a href="teaching.html" class="active">Teaching</a>
-    <a href="achievements.html">Achievements</a>
-    <a href="references.html">References</a>
+    <!-- <a href="achievements.html">Achievements</a> -->
+    <!-- <a href="references.html">References</a> -->
     <a href="contact.html">Contact</a>
   </nav>
   <div class="main-wrapper">
@@ -33,13 +73,27 @@
     </aside>
     <main class="content">
       <section>
-        <h2>Teaching Experience</h2>
-        <ul>
-          <li>DBMS</li>
-          <li>Microprocessors & Microcontrollers</li>
-          <li>Artificial Intelligence</li>
-          <li>Mobile Application Development</li>
-        </ul>
+        <h2 class="teaching-header">Academic Courses</h2>
+        <p class="teaching-university">Premier University, Chattogram</p>
+        
+        <div class="semester-card">
+          <div class="semester-title">Spring 2024</div>
+          <ul>
+            <li>Database Management System</li>
+            <li>Database Management System Laboratory</li>
+            <li>Microprocessor and Microcontroller</li>
+          </ul>
+        </div>
+
+        <div class="semester-card">
+          <div class="semester-title">Fall 2024</div>
+          <ul>
+            <li>Mobile Application Development</li>
+            <li>Artificial Intelligence</li>
+            <li>Artificial Intelligence Laboratory</li>
+            <li>Basic Computer Studies</li>
+          </ul>
+        </div>
       </section>
     </main>
   </div>
