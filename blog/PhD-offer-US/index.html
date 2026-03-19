@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>US Professors PhD Funding Opportunities 2026</title>
+  <meta name="description" content="Funded PhD positions at MIT, UCSD, WHOI, Texas A&M in oceanography and climate science. Fall 2026 / Spring 2027 openings." />
+  <meta name="keywords" content="PhD funding US, oceanography PhD, climate science PhD, marine research PhD 2026, US professors PhD openings" />
+  <meta name="author" content="Asif Saad" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://asif-saad.github.io/blog/PhD-offer-US/" />
+  <link rel="icon" href="https://asif-saad.github.io/favicon.ico" type="image/x-icon" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" defer></script>
+
+  <style>
+    :root {
+      --bg: #f8f9fa;
+      --card-bg: #ffffff;
+      --primary: #2c3e50;
+      --primary-light: #34495e;
+      --accent: #2980b9;
+      --accent-light: #3498db;
+      --success: #27ae60;
+      --danger: #c0392b;
+      --text: #333333;
+      --text-muted: #7f8c8d;
+      --border: #ecf0f1;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
+      --border-radius: 8px;
+      --border-radius-sm: 6px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 10px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.0em;
+      margin: 0 0 8px 0;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      font-size: 1.1em;
+      opacity: 0.9;
+    }
+
+    main {
+      padding: 30px 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    thead {
+      background: var(--primary-light);
+    }
+
+    th {
+      padding: 14px 12px;
+      font-weight: 500;
+      color: white;
+      text-align: left;
+      font-size: 0.95em;
+      border-bottom: 2px solid var(--primary);
+      pointer-events: none;
+    }
+
+    th * {
+      pointer-events: none;
+    }
+
+    td {
+      padding: 14px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    tr:nth-child(even) {
+      background: #fafbfc;
+    }
+
+    tr:hover {
+      background: #f0f2f5;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid var(--accent-light);
+      padding: 2px 4px;
+      transition: all 0.2s ease;
+    }
+
+    a:hover {
+      background: #ecf0f1;
+      color: #21618c;
+    }
+
+    .domain {
+      background: #ecf0f1;
+      color: #2c3e50;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.85em;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .session {
+      color: var(--success);
+      font-weight: 600;
+      background: #f0fff4;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      white-space: nowrap;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-muted);
+      font-size: 1.1em;
+    }
+
+    .error {
+      background: #fdf2f2;
+      color: var(--danger);
+      padding: 20px;
+      border-radius: var(--border-radius-sm);
+      border-left: 4px solid #e74c3c;
+      margin: 20px 0;
+      font-size: 1em;
+    }
+
+    .footer-note {
+      margin-top: 28px;
+      font-size: 0.9em;
+      text-align: center;
+      color: var(--text-muted);
+      padding: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 8px;
+      }
+
+      .container {
+        margin: 10px;
+        border-radius: var(--border-radius-sm);
+      }
+
+      header {
+        padding: 25px 16px;
+      }
+
+      h1 {
+        font-size: 1.7em;
+      }
+
+      .subtitle {
+        font-size: 1em;
+      }
+
+      main {
+        padding: 20px 16px;
+      }
+
+      th,
+      td {
+        padding: 12px 8px;
+      }
+
+      table {
+        font-size: 0.9em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5em;
+      }
+
+      table,
+      thead,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      tr {
+        margin-bottom: 18px;
+        border: 1px solid var(--border);
+        border-radius: var(--border-radius-sm);
+        padding: 14px;
+        background: var(--card-bg);
+      }
+
+      td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        padding-right: 10px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+      }
+
+      td:before {
+        content: attr(data-label) ": ";
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        font-weight: 600;
+        color: var(--primary);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>US PhD Funding Opportunities 2026</h1>
+      <div class="subtitle">List of funded PhD positions with US professors</div>
+    </header>
+
+    <main>
+      <div id="loading" class="loading" aria-live="polite">Loading professor positions...</div>
+
+      <table id="professorsTable" role="grid" aria-label="US PhD funding opportunities 2026">
+        <thead>
+          <tr>
+            <th scope="col">Professor</th>
+            <th scope="col">University</th>
+            <th scope="col">Session</th>
+            <th scope="col">Domain</th>
+            <th scope="col">Department</th>
+            <th scope="col">Profile</th>
+            <th scope="col">Remarks</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="footer-note">
+        Data updated automatically from CSV. For the latest program details, always check the official university or PI website.
+      </div>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initTable);
+      } else {
+        initTable();
+      }
+
+      function initTable() {
+        const loadingEl = document.getElementById('loading');
+        const tableEl = document.getElementById('professorsTable');
+        if (!tableEl) {
+          console.error("Table #professorsTable not found");
+          return;
+        }
+        const tbody = tableEl.querySelector('tbody');
+
+        // Correct path for:
+        // E:\asif-saad.github.io\asset\phd-offer-us.csv
+        fetch('../../asset/phd-offer-us.csv')
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(`CSV fetch failed: ${response.status} ${response.statusText}`);
+            }
+            return response.text();
+          })
+          .then((csvText) => {
+            if (loadingEl) loadingEl.remove();
+
+            const parsed = Papa.parse(csvText, {
+              header: true,
+              skipEmptyLines: true,
+            });
+
+            parsed.data
+              .filter((row) => row.name && row.name.trim() !== '')
+              .forEach((row) => {
+                const tr = tbody.insertRow();
+                const fields = [
+                  'name',
+                  'university',
+                  'session',
+                  'research_domain',
+                  'dept_name',
+                  'url',
+                  'remarks',
+                ];
+
+                const labels = {
+                  name: 'Professor',
+                  university: 'University',
+                  session: 'Session',
+                  research_domain: 'Domain',
+                  dept_name: 'Department',
+                  url: 'Profile',
+                  remarks: 'Remarks',
+                };
+
+                fields.forEach((key) => {
+                  const td = tr.insertCell();
+                  const val = (row[key] || '').trim() || 'N/A';
+                  td.setAttribute('data-label', labels[key]);
+
+                  if (key === 'url' && val !== 'N/A') {
+                    td.innerHTML = `<a href="${val}" target="_blank" rel="noopener" title="Profile of ${row.name || 'the professor'}">View Profile</a>`;
+                  } else if (key === 'research_domain') {
+                    td.innerHTML = `<span class="domain">${val}</span>`;
+                  } else if (key === 'session') {
+                    td.innerHTML = `<span class="session">${val}</span>`;
+                  } else {
+                    td.textContent = val;
+                  }
+                });
+              });
+
+            tableEl.style.display = 'table';
+          })
+          .catch((error) => {
+            const errorMsg = `Error loading data: ${error.message}`;
+            console.error(errorMsg);
+            if (loadingEl) {
+              loadingEl.innerHTML = `<div class="error" role="alert">${errorMsg}</div>`;
+            }
+          });
+      }
+    })();
+  </script>
+</body>
+</html>
