@@ -38,22 +38,20 @@
 
     body {
       margin: 0;
-      padding: 0;
+      padding: 10px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
-      padding: 10px;
     }
 
     .container {
       max-width: 1200px;
-      margin: 0 auto;
+      margin: 20px auto 0;
       background: var(--card-bg);
       border-radius: var(--border-radius);
       box-shadow: var(--shadow);
       overflow: hidden;
-      margin-top: 20px;
     }
 
     header {
@@ -78,14 +76,23 @@
       padding: 30px 20px;
     }
 
+    /* ── Scroll wrapper ── */
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-sm);
+      margin: 20px 0;
+    }
+
     table {
       width: 100%;
+      min-width: 700px;        /* ensures scroll kicks in before columns collapse */
       border-collapse: collapse;
-      margin: 20px 0;
       background: var(--card-bg);
       border-radius: var(--border-radius);
       overflow: hidden;
-      box-shadow: var(--shadow-sm);
     }
 
     thead {
@@ -100,6 +107,7 @@
       font-size: 0.95em;
       border-bottom: 2px solid var(--primary);
       pointer-events: none;
+      white-space: nowrap;     /* keep headers on one line */
     }
 
     th * {
@@ -109,6 +117,10 @@
     td {
       padding: 14px 12px;
       border-bottom: 1px solid var(--border);
+      white-space: normal;         /* allow text to wrap */
+      word-wrap: break-word;       /* legacy support */
+      overflow-wrap: anywhere;     /* break long URLs / words */
+      max-width: 260px;            /* prevent any single column from stretching too wide */
     }
 
     tr:nth-child(even) {
@@ -140,7 +152,10 @@
       border-radius: 4px;
       font-size: 0.85em;
       font-weight: 500;
-      white-space: nowrap;
+      white-space: normal;
+      word-wrap: break-word;
+      overflow-wrap: anywhere;
+      display: inline-block;
     }
 
     .session {
@@ -151,6 +166,7 @@
       border-radius: 4px;
       font-size: 0.9em;
       white-space: nowrap;
+      display: inline-block;
     }
 
     .loading {
@@ -178,6 +194,7 @@
       padding: 10px 0;
     }
 
+    /* ── Tablet ── */
     @media (max-width: 768px) {
       body {
         padding: 8px;
@@ -214,9 +231,16 @@
       }
     }
 
+    /* ── Mobile: stacked card layout ── */
     @media (max-width: 480px) {
       h1 {
         font-size: 1.5em;
+      }
+
+      /* disable horizontal scroll wrapper on card layout */
+      .table-wrapper {
+        overflow-x: visible;
+        box-shadow: none;
       }
 
       table,
@@ -225,6 +249,10 @@
       td,
       tr {
         display: block;
+      }
+
+      table {
+        min-width: unset;
       }
 
       thead tr {
@@ -248,6 +276,7 @@
         padding-right: 10px;
         padding-top: 6px;
         padding-bottom: 6px;
+        max-width: 100%;
       }
 
       td:before {
@@ -271,20 +300,22 @@
     <main>
       <div id="loading" class="loading" aria-live="polite">Loading professor positions...</div>
 
-      <table id="professorsTable" role="grid" aria-label="US PhD funding opportunities 2026">
-        <thead>
-          <tr>
-            <th scope="col">Professor</th>
-            <th scope="col">University</th>
-            <th scope="col">Session</th>
-            <th scope="col">Domain</th>
-            <th scope="col">Department</th>
-            <th scope="col">Profile</th>
-            <th scope="col">Remarks</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+      <div class="table-wrapper">
+        <table id="professorsTable" role="grid" aria-label="US PhD funding opportunities 2026">
+          <thead>
+            <tr>
+              <th scope="col">Professor</th>
+              <th scope="col">University</th>
+              <th scope="col">Session</th>
+              <th scope="col">Domain</th>
+              <th scope="col">Department</th>
+              <th scope="col">Profile</th>
+              <th scope="col">Remarks</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
 
       <div class="footer-note">
         Data updated automatically from CSV. For the latest program details, always check the official university or PI website.
@@ -309,8 +340,6 @@
         }
         const tbody = tableEl.querySelector('tbody');
 
-        // Correct path for:
-        // E:\asif-saad.github.io\asset\phd-offer-us.csv
         fetch('../../asset/phd-offer-us.csv')
           .then((response) => {
             if (!response.ok) {
