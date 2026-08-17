@@ -1,208 +1,268 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Asif Mohammed Saad | Home</title>
+  <meta
+    name="description"
+    content="Academic portfolio of Asif Mohammed Saad, PhD Student in Computer Science at Tulane University."
+  >
+  <title>Asif Mohammed Saad | PhD Student</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap"
+  rel="stylesheet"
+>
 </head>
 
 <body>
-  <nav class="topnav">
-    <a href="index.html" class="active">Home</a>
-    <!-- <a href="cv.html">CV</a> -->
-    <a href="research.html">Research</a>
-    <!-- <a href="projects.html">Projects</a> -->
-    <a href="teaching.html">Teaching</a>
-    <!-- <a href="achievements.html">Achievements</a> -->
-    <!-- <a href="references.html">References</a> -->
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="main-wrapper">
-    <aside class="sidebar">
-      <div class="profile-card">
-        <img src="image/pp.JPG" alt="Asif Mohammed Saad">
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">Asif Mohammed Saad</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">PhD Student · Computer Science</p>
+
         <h1>Asif Mohammed Saad</h1>
-        <h2>Lecturer, Premier University, Chattogram</h2>
-        <p>Aspiring PhD<br>Quantum Machine Learning<br>Quantum Computing<br>
-          Time Series Analysis
+
+        <p class="role">
+          Tulane University · Department of Computer Science
         </p>
-        <div class="contact-info">
-          <div>Email: <a href="mailto:asifsaad730@gmail.com">asifsaad730@gmail.com</a></div>
-          <div>Chattogram, Bangladesh</div>
+
+        <p class="intro">
+          I am a PhD student in the Department of Computer Science at Tulane
+          University, working in Dr. Jiyuan Wang's lab. My research interests
+          include quantum computing, quantum software engineering, autonomous
+          systems, trustworthy and safe large language models, and benchmarking
+          and reasoning in language models.
+        </p>
+
+        <div class="button-row">
+          <a class="button button-primary" href="research.html">
+            Explore research
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="https://scholar.google.com/citations?user=BcD0Cy8AAAAJ&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google Scholar
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="https://github.com/asif-saad"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
         </div>
       </div>
-    </aside>
-    <main class="content">
-      <section>
-        <h2>About Me</h2>
+
+      <img
+        class="profile-photo"
+        src="assets/images/profile.jpg"
+        alt="Portrait of Asif Mohammed Saad"
+      >
+    </div>
+  </section>
+
+  <main>
+    <section class="container page-intro">
+      <h2 class="section-heading">Research profile</h2>
+
+      <p>
+        My work focuses on reliable and practical computing systems—from
+        quantum software and quantum-enabled learning to autonomous systems
+        and the evaluation of modern language models. I am particularly
+        interested in developing methods that make advanced AI systems more
+        dependable, measurable, and useful in real-world settings.
+      </p>
+    </section>
+
+    <section class="container grid grid-three" aria-label="Research interests">
+      <article class="card">
+        <h3>Quantum Computing</h3>
         <p>
-          I am a Lecturer at Premier University, Chattogram,
-          teaching Database Management System, Microprocessors & Microcontrollers,
-          Artificial Intelligence, Computer and Cyber Security, and
-          Mobile Application Development. My research focuses on quantum machine learning
-          and SVM optimization. I am currently seeking PhD opportunities.
+          Quantum algorithms, quantum machine learning, and the practical
+          development of quantum-enabled computing systems.
         </p>
+      </article>
+
+      <article class="card">
+        <h3>Quantum Software Engineering</h3>
         <p>
-          <a href="asset/Asif_Saad_CV.pdf" target="_blank" 
-          style="color:#6cb2ff;font-weight:bold;">
-            Download my CV (PDF)
-          </a>
+          Methods, tools, testing practices, and software-engineering
+          principles for building reliable quantum applications.
         </p>
+      </article>
 
-      </section>
+      <article class="card">
+        <h3>Autonomous Systems</h3>
+        <p>
+          Intelligent perception, decision-making, and dependable software for
+          autonomous and real-time systems.
+        </p>
+      </article>
 
-      <section>
-        <h2>Experience</h2>
-        <ul>
-          <li>
-            <strong>Premier University, Chattogram (Lecturer)</strong><br>
-            May 2024 - Current<br>
-            Conducted courses on DBMS, Microprocessors & Microcontrollers, Artificial Intelligence, Mobile Application
-            Development.
-          </li>
-          <li>
-            <strong>Mobile Application Development Instructor</strong><br>
-            December 2024<br>
-            Employed as instructor for mobile apps development with Flutter in EDGE project.
-          </li>
-        </ul>
-      </section>
+      <article class="card">
+        <h3>Trustworthy &amp; Safe LLMs</h3>
+        <p>
+          LLM safety, hallucination detection and mitigation, reliability, and
+          responsible model behavior.
+        </p>
+      </article>
 
+      <article class="card">
+        <h3>Benchmarking &amp; LLM Reasoning</h3>
+        <p>
+          Evaluation design, factual reliability, robustness, and the reasoning
+          capabilities and limitations of language models.
+        </p>
+      </article>
 
+      <article class="card">
+        <h3>Applied Machine Learning</h3>
+        <p>
+          Computer vision, time-series modeling, and machine-learning methods
+          for scientific and real-world data.
+        </p>
+      </article>
+    </section>
 
-      <section>
-        <h2>Education</h2>
-        <ul>
-          <li><strong>Chittagong University of Engineering & Technology</strong><br>
-            Master of Science in Computer Science & Engineering <b><i>(Pursuing)</i></b></li>
-          <li><strong>Khulna University of Engineering & Technology</strong><br>
-            Bachelor of Science in Computer Science & Engineering (2024)</li>
-          <li><strong>Chattogram Cantonment Public College</strong><br>
-            Higher Secondary School Certificate (2018)<br>
-            Secondary School Certificate (2016)</li>
-        </ul>
-      </section>
+    <section class="section-alt">
+      <div class="container">
+        <h2 class="section-heading">Selected publications</h2>
 
+        <div class="grid">
+          <article class="card">
+            <span class="tag">Data in Brief · 2024</span>
 
+            <h3>Bangla News Article Dataset</h3>
 
-      <section>
-        <h2>Technical Skills</h2>
-        <ul>
-          <li><strong>Languages:</strong> C, C++, Python, Java, C#, CSS, Bootstrap, Kotlin</li>
-          <li><strong>Developer Tools:</strong> VS Code, Visual Studio, Sublime Text, Git, Github Actions, Vim</li>
-          <li><strong>Frameworks:</strong> Android SDK, Scikit-learn, Pytest, Django, Flask, Pytorch</li>
-          <li><strong>Cloud/Databases:</strong> Oracle SQL, Firebase</li>
-        </ul>
-      </section>
+            <p>
+              A. M. Saad, U. N. Mahi, M. S. Salim, and S. I. Hossain.
+              <em>Data in Brief</em>, 57, 110874.
+            </p>
 
+            <p>
+              <a href="research.html#publications">
+                View all publications
+              </a>
+            </p>
+          </article>
 
+          <article class="card">
+            <span class="tag">arXiv · 2025</span>
 
-      <section>
-        <h2>Certification</h2>
-        <ul>
-          <li><a href="image/asif saad qbronze.jpg" target="_blank" style="color:#6cb2ff;"><strong>
-                Global Quantum Programming Workshop (QWorld Bronze)</strong></a>
-            QWorld Challenge Autumn 2020 – Completed online workshop on quantum programming fundamentals</li>
+            <h3>
+              Evaluating YOLO Architectures for Real-Time Vehicle Detection
+            </h3>
 
-          <li><a href="image/Data Preprocessing for Machine Learning with Python_Part2.jpg" target="_blank"
-              style="color:#6cb2ff;"><strong>
-                Data Preprocessing for Machine Learning with Python
-              </strong></a>
-            (EMK Center, Mar–Apr 2022) –
-            Completed hands-on training in data cleaning and preparation techniques using Python</li>
+            <p>
+              Research on evaluating YOLO architectures for vehicle detection
+              in complex urban settings in Bangladesh.
+            </p>
 
+            <p>
+              <a
+                href="https://arxiv.org/abs/2509.05652"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read on arXiv
+              </a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <li><a href="image/QCourse511-1-41.jpg" target="_blank" style="color:#6cb2ff;"><strong>
-                Online Graduate QCOURSE 511-1: Quantum Computing & Programming
-              </strong></a>
-            (QWorld, Sep 2021–Jan 2022) –
-            Completed with project co-development on
-            “Introduction to Quantum Chemistry”</li>
+    <section class="container section">
+      <h2 class="section-heading">Selected projects</h2>
 
+      <div class="grid">
+        <article class="card">
+          <span class="tag">Quantum machine learning</span>
 
+          <h3>MNIST Image Classification with QNN</h3>
 
-          <li><a href="image/QCourse551-1-14.jpg" target="_blank" style="color:#6cb2ff;"><strong>
-                Quantum Software Development with Classiq
-              </strong></a>
-            (QCourse 551-1, QWorld & University of Latvia, Sep 2023–Jan 2024) –
-            Completed graduate-level project on hybrid neural networks for
-            MNIST classification under expert mentorship</li>
+          <p>
+            A hybrid quantum neural network workflow for handwritten-digit
+            classification using PyTorch and the Classiq SDK.
+          </p>
 
+          <p>
+            <a href="projects.html">View project details</a>
+          </p>
+        </article>
 
+        <article class="card">
+          <span class="tag">Quantum computing</span>
 
+          <h3>Introduction to Quantum Chemistry Notebook</h3>
 
-          <li><a href="image/QCourse551-1-14.jpg" target="_blank" style="color:#6cb2ff;"><strong>
-                Introduction to Quantum Computing
-              </strong></a>
-            (Qubit by Qubit & IBM Quantum, 2020–2021) –
-            Completed foundational course covering linear algebra, Qiskit programming,
-            quantum mechanics, and algorithms</li>
-        </ul>
-      </section>
+          <p>
+            A learning-oriented notebook covering encoding, mapping,
+            variational quantum eigensolvers, and quantum phase estimation.
+          </p>
 
+          <p>
+            <a href="projects.html">View project details</a>
+          </p>
+        </article>
+      </div>
+    </section>
 
-      <section>
-        <h2>Achievements</h2>
-        <ul>
-          <li>Dean's Award based on academic result for 2019-2020 session.</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Positions of Responsibility</h2>
-        <ul>
-          <li>Instructor, Quantum Bangladesh</li>
-          <li>Workshop Manager, Bit2Byte, KUET</li>
-          <li>General Member, SGIPC, KUET</li>
-          <li>Session Manager, SPLASH/ECOOP 2020</li>
-        </ul>
-      </section>
+    <section class="section-alt">
+      <div class="container">
+        <h2 class="section-heading">Academic background</h2>
 
-      <section>
-        <h2>References</h2>
-        <ul>
-          <li>
-            <strong>Dr. M.M.A. Hashem</strong><br>
-            Professor, Department of Computer Science & Engineering<br>
-            Khulna University of Engineering & Technology (KUET), Khulna -9203, Bangladesh.<br>
-            Email: hashem@cse.kuet.ac.bd<br>
-            Contact Number: +880 1714-003949
-          </li>
-          <li>
-            <strong>Dr. Sk. Imran Hossain</strong><br>
-            Associate Professor, Department of Computer Science & Engineering<br>
-            Khulna University of Engineering & Technology, Khulna - 9203<br>
-            Email: imran@cse.kuet.ac.bd<br>
-            Contact Number: +880 1758-073936
-          </li>
-          <li>
-            <strong>Syed Md. Minhaz Hossain</strong><br>
-            Associate Professor, Department of Computer Science & Engineering<br>
-            Premier University, Chattogram, Bangladesh.<br>
-            Email: minhaz.hossain@puc.ac.bd<br>
-            Contact Number: +880 1815-811328
-          </li>
-          <li>
-            <strong>Dhrubajyoti Das</strong><br>
-            Assistant Professor, Department of Computer Science & Engineering<br>
-            Premier University, Chattogram, Bangladesh.<br>
-            Email: minhaz.hossain@puc.ac.bd<br>
-            Contact Number: +880 1785-718553
-          </li>
-          <li>
-            <strong>Md. Shahidul Salim</strong><br>
-            Lecturer, Department of Computer Science & Engineering<br>
-            Khulna University of Engineering & Technology (KUET), Khulna -9203, Bangladesh.<br>
-            Email: ss@cse.kuet.ac.bd<br>
-            Contact Number: +880 1779-866124
-          </li>
-        </ul>
-      </section>
-    </main>
-  </div>
+        <div class="item-list">
+          <article class="item">
+            <h3>PhD Student in Computer Science</h3>
+            <p class="meta">Fall 2026 – Present</p>
+            <p>
+              Department of Computer Science, Tulane University · Researcher in
+              Dr. Jiyuan Wang's lab.
+            </p>
+          </article>
+
+          <article class="item">
+            <h3>Former Lecturer</h3>
+            <p class="meta">Premier University, Chattogram</p>
+            <p>
+              Previously taught courses in artificial intelligence, database
+              management systems, cybersecurity, microprocessors and
+              microcontrollers, and mobile application development.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Asif Mohammed Saad · Academic Portfolio</p>
+    </div>
+  </footer>
 </body>
-
 </html>

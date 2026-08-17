@@ -1,74 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Asif Mohammed Saad | Projects</title>
+  <meta
+    name="description"
+    content="Selected quantum computing and machine learning projects by Asif Mohammed Saad."
+  >
+  <title>Projects | Asif Mohammed Saad</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap"
+  rel="stylesheet"
+>
 </head>
+
 <body>
-  <nav class="topnav">
-    <a href="index.html">Home</a>
-    <!-- <a href="cv.html">CV</a> -->
-    <a href="research.html">Research</a>
-    <!-- <a href="projects.html" class="active">Projects</a> -->
-    <a href="teaching.html">Teaching</a>
-    <!-- <a href="achievements.html">Achievements</a> -->
-    <!-- <a href="references.html">References</a> -->
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="main-wrapper">
-    <aside class="sidebar">
-      <div class="profile-card">
-        <img src="image/pp.JPG" alt="Asif Mohammed Saad">
-        <h1>Asif Mohammed Saad</h1>
-        <h2>Lecturer, Premier University, Chattogram</h2>
-        <p>Aspiring PhD<br>Quantum Machine Learning<br>Mobile Application Development</p>
-        <div class="contact-info">
-          <div>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></div>
-          <div>Chattogram, Bangladesh</div>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">Asif Mohammed Saad</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-intro">
+      <p class="eyebrow">Projects</p>
+
+      <h1 class="page-title">Selected technical projects</h1>
+
+      <p class="lead">
+        A focused selection of projects in quantum machine learning, quantum
+        computing, and practical quantum-software development.
+      </p>
+    </section>
+
+    <section class="container grid">
+      <article class="card">
+        <span class="tag">Quantum machine learning</span>
+
+        <h3>MNIST Image Classification with QNN</h3>
+
+        <p>
+          Developed a hybrid quantum neural network workflow for handwritten
+          digit classification. The project uses quantum technology from
+          Classiq together with classical deep-learning tools to explore
+          quantum-enhanced image classification.
+        </p>
+
+        <p class="meta">PyTorch · Classiq SDK</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Quantum computing</span>
+
+        <h3>Introduction to Quantum Chemistry Notebook</h3>
+
+        <p>
+          Created an educational notebook introducing foundational quantum
+          chemistry workflows, including problem mapping, encoding,
+          variational quantum eigensolvers, and quantum phase estimation.
+        </p>
+
+        <p class="meta">Qiskit · Cirq</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Quantum software practice</span>
+
+        <h3>PennyLane Codebook Solutions</h3>
+
+        <p>
+          Developed solutions for exercises from the PennyLane Codebook across
+          multiple quantum-computing topics. This work strengthened practical
+          experience with quantum circuits, variational models, and
+          quantum-machine-learning workflows.
+        </p>
+
+        <p class="meta">PennyLane · Python</p>
+      </article>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <h2 class="section-heading">Project approach</h2>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Research-oriented development</h3>
+
+            <p>
+              These projects connect theoretical concepts with reproducible
+              implementations, emphasizing clear experimental workflows,
+              software tools, and practical learning outcomes.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Future additions</h3>
+
+            <p>
+              This page will expand with links to source code, experiment
+              documentation, notebooks, datasets, and results as projects are
+              prepared for public release.
+            </p>
+          </article>
         </div>
       </div>
-    </aside>
-    <main class="content">
-      <section>
-        <h2>Personal Projects</h2>
-        <ul>
-          <li>
-            <strong>MNIST image classification with QNN</strong><br>
-            Tools: PyTorch, Classiq SDK<br>
-            Used quantum technology from Classiq to recognize digits through hybrid QNN.
-          </li>
-          <li>
-            <strong>Health Bee</strong><br>
-            Tools: Android Studio, CI/CD utility<br>
-            Basic performing mobile app developed following SE norms and methods, with proper documentation.
-          </li>
-          <li>
-            <strong>Website for Bit2Byte</strong><br>
-            Tools: JavaScript, C#, HTML, CSS<br>
-            Website with admin panel, user panel, newsletter box, and basic website features.
-          </li>
-          <li>
-            <strong>Introduction to Quantum Chemistry Notebook</strong><br>
-            Tools: Qiskit, Cirq<br>
-            Tutorial notebook on mapping, encoding, VQE, and QPE in quantum chemistry.
-          </li>
-          <li>
-            <strong>Piksel</strong><br>
-            Tools: Android Studio, Java SDK<br>
-            Android app where artists can auction artworks and clients can purchase through bidding.
-          </li>
-          <li>
-            <strong>Solution to Pennylane Codebook</strong><br>
-            Tools: Pennylane<br>
-            Solution repository for tasks in the PennyLane codebook, from different subdomains of quantum computing.
-          </li>
-        </ul>
-      </section>
-    </main>
-  </div>
+    </section>
+
+    <section class="container section">
+      <div class="notice">
+        <p>
+          <strong>Optional improvement:</strong> When a project repository is
+          ready to share, add a direct GitHub link beneath that project's
+          technology line. A short README, one representative figure, and a
+          concise results summary will make each project much more useful for
+          research visitors.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Asif Mohammed Saad · Academic Portfolio</p>
+    </div>
+  </footer>
 </body>
 </html>

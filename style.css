@@ -1,249 +1,437 @@
+:root {
+  --page: #F7F5F0;
+  --surface: #FFFEFB;
+  --surface-alt: #ECE9E1;
+  --text: #20231F;
+  --muted: #60665D;
+  --navy: #1F4D3A;
+  --steel: #326B52;
+  --copper: #9B6A2C;
+  --border: #D5D0C6;
+  --hover: #E2EADF;
+  --shadow: 0 6px 18px rgba(32, 35, 31, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-  background: #181c24;
-  color: #e7eaf0;
-  font-size: 20px;
-  letter-spacing: 0.01em;
+  background: var(--page);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   line-height: 1.7;
 }
 
-/* Top Navigation Bar (fixed on desktop only) */
-.topnav {
-  width: 100%;
-  background: #232836;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100px;
-  z-index: 1000;
-  flex-wrap: nowrap;
-  padding-left: 500px; /* Sidebar width on desktop */
-  box-sizing: border-box;
-  transition: padding-left 0.3s;
-  overflow-x: auto;
+a {
+  color: var(--steel);
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
-.topnav a {
-  color: #e7eaf0;
-  text-decoration: none;
-  padding: 2rem 2.5rem;
-  font-size: 1.3rem;
-  font-weight: 500;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s, padding 0.3s;
-  border-radius: 3px 3px 0 0;
+a:hover,
+a:focus {
+  color: var(--navy);
+}
+
+img {
   display: block;
-  white-space: nowrap;
-  letter-spacing: 0.01em;
-  margin: 0;
-}
-.topnav a:hover, .topnav a.active {
-  background: #181c24;
-  color: #6cb2ff;
+  max-width: 100%;
+  height: auto;
 }
 
-/* Main wrapper with enough top padding for nav bar (Desktop Only) */
-.main-wrapper {
-  display: flex;
-  margin: 0;
-  min-height: 80vh;
-  padding-top: 100px; /* Must match .topnav height on desktop */
-  transition: padding-top 0.3s;
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(245, 247, 250, 0.97);
+  border-bottom: 1px solid var(--border);
 }
 
-/* Fixed Sidebar (Desktop, always fixed width, no horizontal scroll) */
-.sidebar {
-  position: fixed;
-  top: 100px; /* Must match .topnav height */
-  left: 0;
-  height: calc(100vh - 100px);
-  width: 500px;
-  min-width: 500px;
-  max-width: 500px;
-  background: #232836;
-  padding: 32px 20px;
-  box-sizing: border-box;
-  border-right: 1px solid #232836;
+.nav-wrap {
+  width: min(960px, calc(100% - 32px));
+  min-height: 68px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  z-index: 101;
-  overflow-x: hidden;  /* Prevent horizontal scroll */
-  overflow-y: auto;
-  transition: width 0.3s, top 0.3s;
+  justify-content: flex-start;
+  gap: clamp(44px, 5vw, 88px);
 }
 
-/* Ensure all sidebar content fits */
-.profile-card, .sidebar img, .sidebar .profile-card {
-  max-width: 100%;
-  box-sizing: border-box;
-  overflow-x: hidden;
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-left: 0;
 }
 
-.profile-card {
-  background: #232836;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.14);
-  padding: 24px 18px 18px 18px;
-  text-align: center;
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 32px;
+.brand {
+  color: var(--navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  padding-right: 28px;
+  border-right: 1px solid var(--border);
 }
-.profile-card img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
+
+
+.site-nav a {
+  color: var(--text);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--navy);
+}
+
+.site-nav a.active {
+  border-bottom: 2px solid var(--copper);
+  padding-bottom: 3px;
+}
+
+.container {
+  width: min(960px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.hero {
+  background: var(--surface);
+  border-bottom: 4px solid var(--navy);
+  padding: 76px 0 66px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  align-items: center;
+  gap: 48px;
+}
+
+.eyebrow,
+.meta,
+.tag {
+  color: var(--copper);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+}
+
+.hero h1,
+.page-title,
+h2,
+h3 {
+  color: var(--navy);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.22;
+}
+
+.hero h1 {
+  max-width: 780px;
+  margin: 0;
+  font-size: clamp(2.35rem, 6vw, 4rem);
+  letter-spacing: -0.03em;
+}
+
+.hero .role {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 1.14rem;
+}
+
+.hero .intro {
+  max-width: 760px;
+  margin: 22px 0 0;
+  font-size: 1.08rem;
+}
+
+.profile-photo {
+  width: 220px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 16px;
-  border: 4px solid #232836;
-  background: #181c24;
-}
-.profile-card h1 { font-size: 1.7rem; margin: 0 0 8px 0; color: #fff; font-weight: 700;}
-.profile-card h2 { font-size: 1.25rem; font-weight: 400; color: #a0b3d6; margin: 0 0 12px 0; }
-.profile-card p { font-size: 1.18rem; color: #b2b9c9; margin: 0 0 10px 0; }
-.contact-info { margin-top: 18px; font-size: 1.13rem; color: #e7eaf0; }
-.contact-info a { color: #6cb2ff; text-decoration: none; word-break: break-all; }
-.contact-info a:hover { text-decoration: underline; }
-
-.content {
-  flex: 1 1 0;
-  padding: 40px 32px 40px 32px;
-  background: #181c24;
-  min-width: 0;
-  margin-left: 510px; /* sidebar width + extra spacing */
-  max-width: 1100px;
-  margin-right: auto;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--surface-alt);
+  box-shadow: var(--shadow);
 }
 
-section {
-  margin-bottom: 2.5rem;
-}
-section h2 {
-  color: #6cb2ff;
-  font-size: 1.6rem;
-  margin-bottom: 0.7rem;
-  border-left: 4px solid #232836;
-  padding-left: 0.5rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-}
-ul, ol { padding-left: 1.2rem; }
-li { margin-bottom: 0.4rem; }
-
-/* ----------- RESPONSIVE BREAKPOINTS ----------- */
-
-/* For screens below 1200px: sidebar and nav adjust */
-@media (max-width: 1200px) {
-  .topnav { padding-left: 300px; }
-  .sidebar {
-    width: 300px;
-    min-width: 300px;
-    max-width: 300px;
-  }
-  .content { margin-left: 310px; }
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
 }
 
-/* For screens below 1100px: 
-   - Make the nav bar static (not fixed)
-   - Remove sidebar offset
-   - Remove main-wrapper padding-top
-   - Allow nav links to wrap and grow in height
-*/
-@media (max-width: 1100px) {
-  .main-wrapper { flex-direction: column; padding-top: 0; }
-  .sidebar {
-    position: static;
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #232836;
-    flex-direction: row;
-    justify-content: center;
-    height: auto;
-    overflow-y: visible;
-    overflow-x: hidden;
-    top: 0;
-    padding: 24px 8px;
-  }
-  .profile-card { margin-bottom: 0; max-width: 100%; }
-  .content {
-    margin-left: 0;
-    margin-right: 0;
-    max-width: 100%;
-    padding: 28px 10px;
-  }
-  .topnav {
-    position: static;
-    padding-left: 0;
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-direction: row;
-    gap: 16px;
-    min-height: unset;
-    height: auto;
-    box-shadow: none;
-    border-bottom: 1px solid #232836;
-    flex-wrap: wrap;
-    overflow-x: visible;
-  }
-  .topnav a {
-    padding: 1rem 1rem;
-    font-size: 1.1rem;
-    border-radius: 0;
-    border-bottom: none;
-    text-align: left;
-    white-space: nowrap;
-  }
+.button {
+  display: inline-block;
+  border: 1px solid var(--navy);
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 0.94rem;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-/* For screens below 600px: nav links even smaller, stack vertically */
-@media (max-width: 600px) {
-  .sidebar { flex-direction: column; align-items: center; padding: 12px 2px; }
-  .content { padding: 12px 2px; }
-  .profile-card { padding: 12px 6px; }
-  .topnav {
+.button-primary {
+  background: var(--navy);
+  color: #ffffff;
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  background: #0e2c4d;
+  color: #ffffff;
+}
+
+.button-secondary {
+  background: transparent;
+  color: var(--navy);
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  background: var(--hover);
+  color: var(--navy);
+}
+
+main {
+  padding: 54px 0 70px;
+}
+
+.page-intro {
+  margin-bottom: 34px;
+}
+
+.page-title {
+  margin: 0 0 10px;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.lead {
+  max-width: 780px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.06rem;
+}
+
+.section {
+  margin-top: 46px;
+}
+
+.section-alt {
+  margin-top: 54px;
+  padding: 50px 0;
+  background: var(--surface-alt);
+}
+
+.section-alt .container {
+  width: min(960px, calc(100% - 32px));
+}
+
+.section-heading {
+  margin: 0 0 18px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.section-heading::after {
+  display: block;
+  width: 52px;
+  height: 3px;
+  margin-top: 10px;
+  background: var(--copper);
+  content: "";
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.grid-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card p + p {
+  margin-top: 10px;
+}
+
+.item-list {
+  display: grid;
+  gap: 16px;
+}
+
+.item {
+  border-left: 3px solid var(--steel);
+  padding: 3px 0 3px 16px;
+}
+
+.item h3 {
+  margin: 0 0 4px;
+  font-size: 1.14rem;
+}
+
+.item p {
+  margin: 0;
+}
+
+.item .meta {
+  margin: 5px 0 10px;
+}
+
+.tag {
+  display: inline-block;
+  background: #f6eae2;
+  border-left: 3px solid var(--copper);
+  padding: 4px 7px;
+  letter-spacing: 0.03em;
+}
+
+.clean-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.clean-list li {
+  margin-bottom: 8px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-list li {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--navy);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.84rem;
+  padding: 6px 9px;
+}
+
+.contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+}
+
+.notice {
+  border-left: 4px solid var(--copper);
+  background: #fffaf5;
+  padding: 16px 18px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: #e1e8ef;
+  color: var(--muted);
+  padding: 24px 0;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 720px) {
+  .nav-wrap {
+    min-height: auto;
+    padding: 14px 0;
+    align-items: flex-start;
     flex-direction: column;
-    align-items: stretch;
-    height: auto;
-    position: static;
-    padding-left: 0;
-    justify-content: flex-start;
-    gap: 0;
-    border-bottom: 1px solid #232836;
-    flex-wrap: wrap;
-    overflow-x: visible;
+    gap: 10px;
   }
-  .topnav a {
-    padding: 0.8rem 0.8rem;
-    font-size: 1.02rem;
-    border-radius: 0;
-    text-align: left;
-    border-bottom: 1px solid #232836;
-    white-space: normal;
+
+  .site-nav {
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 56px 0 50px;
+  }
+
+  .hero-grid,
+  .grid,
+  .grid-three {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo {
+    width: 180px;
+    height: 180px;
+    grid-row: 1;
+  }
+
+  main {
+    padding-top: 38px;
   }
 }
 
-img, video {
-  max-width: 100%;
-  height: auto;
-}
+@media (max-width: 420px) {
+  .container,
+  .nav-wrap {
+    width: min(100% - 24px, 960px);
+  }
 
-.container, .content, main, section {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px;
-}
+  .site-nav {
+    gap: 10px;
+  }
 
-.content, .content p, .content li, .content div, section, section p, section li {
-  text-align: justify;
+  .site-nav a {
+    font-size: 0.86rem;
+  }
+
+  .card {
+    padding: 18px;
+  }
 }
