@@ -3,18 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta
-    name="description"
-    content="Academic portfolio of Asif Mohammed Saad, PhD Student in Computer Science at Tulane University."
-  >
-  <title>Asif Mohammed Saad | PhD Student</title>
+  <meta name="robots" content="index, follow">
+
+  <title>Asif Mohammed Saad | PhD Student in Computer Science at Tulane University</title>
+  <meta name="description" content="Asif Mohammed Saad is a PhD student in Computer Science at Tulane University researching quantum computing, quantum software engineering, autonomous systems, and trustworthy AI.">
+
+  <link rel="canonical" href="https://asif-saad.github.io/">
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap"
-  rel="stylesheet"
->
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Asif Mohammed Saad">
+  <meta property="og:title" content="Asif Mohammed Saad | PhD Student at Tulane University">
+  <meta property="og:description" content="Research in quantum computing, quantum software engineering, autonomous systems, and trustworthy AI.">
+  <meta property="og:url" content="https://asif-saad.github.io/">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Asif Mohammed Saad | PhD Student at Tulane University">
+  <meta name="twitter:description" content="Research in quantum computing, quantum software engineering, autonomous systems, and trustworthy AI.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://asif-saad.github.io/#person",
+      "name": "Asif Mohammed Saad",
+      "url": "https://asif-saad.github.io/",
+      "jobTitle": "PhD Student in Computer Science",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Tulane University"
+      },
+      "description": "PhD student in Computer Science at Tulane University researching quantum computing, quantum software engineering, autonomous systems, and trustworthy AI.",
+      "knowsAbout": [
+        "Quantum Computing",
+        "Quantum Machine Learning",
+        "Quantum Software Engineering",
+        "Autonomous Systems",
+        "Trustworthy Artificial Intelligence",
+        "Large Language Models"
+      ],
+      "sameAs": [
+        "https://github.com/asif-saad"
+      ]
+    }
+  }
+  </script>
 </head>
 
 <body>
@@ -23,245 +58,153 @@
       <a class="brand" href="index.html">Asif Mohammed Saad</a>
 
       <nav class="site-nav" aria-label="Primary navigation">
-        <a class="active" href="index.html">Home</a>
+        <a class="active" href="index.html" aria-current="page">Home</a>
         <a href="research.html">Research</a>
         <a href="projects.html">Projects</a>
         <a href="teaching.html">Teaching</a>
+        <a href="cv.html">CV</a>
+        <a href="achievements.html">Achievements</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <p class="eyebrow">PhD Student · Computer Science</p>
-
-        <h1>Asif Mohammed Saad</h1>
-
-        <p class="role">
-          Tulane University · Department of Computer Science
-        </p>
-
-        <p class="intro">
-          I am a PhD student in the Department of Computer Science at Tulane
-          University, working in Dr. Jiyuan Wang's lab. My research interests
-          include quantum computing, quantum software engineering, autonomous
-          systems, trustworthy and safe large language models, and benchmarking
-          and reasoning in language models.
-        </p>
-
-        <div class="button-row">
-          <a class="button button-primary" href="research.html">
-            Explore research
-          </a>
-
-          <a
-            class="button button-secondary"
-            href="https://scholar.google.com/citations?user=BcD0Cy8AAAAJ&hl=en"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Google Scholar
-          </a>
-
-          <a
-            class="button button-secondary"
-            href="https://github.com/asif-saad"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </div>
-      </div>
-
-      <img
-        class="profile-photo"
-        src="assets/images/profile.jpg"
-        alt="Portrait of Asif Mohammed Saad"
-      >
-    </div>
-  </section>
-
   <main>
-    <section class="container page-intro">
-      <h2 class="section-heading">Research profile</h2>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">PhD Student · Computer Science</p>
 
-      <p>
-        My work focuses on reliable and practical computing systems—from
-        quantum software and quantum-enabled learning to autonomous systems
-        and the evaluation of modern language models. I am particularly
-        interested in developing methods that make advanced AI systems more
-        dependable, measurable, and useful in real-world settings.
-      </p>
+          <h1>Asif Mohammed Saad</h1>
+
+          <p class="role">Tulane University · Department of Computer Science</p>
+
+          <p class="intro">
+            I am a PhD student in the Department of Computer Science at Tulane
+            University, working in Dr. Jiyuan Wang's lab. My research interests
+            include quantum computing, quantum software engineering, autonomous
+            systems, trustworthy and safe large language models, and benchmarking
+            and reasoning in language models.
+          </p>
+
+          <div class="button-row">
+            <a class="button button-primary" href="research.html">View research</a>
+            <a class="button button-secondary" href="contact.html">Contact me</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="container grid grid-three" aria-label="Research interests">
-      <article class="card">
-        <h3>Quantum Computing</h3>
-        <p>
-          Quantum algorithms, quantum machine learning, and the practical
-          development of quantum-enabled computing systems.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>Quantum Software Engineering</h3>
-        <p>
-          Methods, tools, testing practices, and software-engineering
-          principles for building reliable quantum applications.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>Autonomous Systems</h3>
-        <p>
-          Intelligent perception, decision-making, and dependable software for
-          autonomous and real-time systems.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>Trustworthy &amp; Safe LLMs</h3>
-        <p>
-          LLM safety, hallucination detection and mitigation, reliability, and
-          responsible model behavior.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>Benchmarking &amp; LLM Reasoning</h3>
-        <p>
-          Evaluation design, factual reliability, robustness, and the reasoning
-          capabilities and limitations of language models.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>Applied Machine Learning</h3>
-        <p>
-          Computer vision, time-series modeling, and machine-learning methods
-          for scientific and real-world data.
-        </p>
-      </article>
-    </section>
-
-    <section class="section-alt">
+    <section class="section">
       <div class="container">
-        <h2 class="section-heading">Selected publications</h2>
+        <h2 class="section-heading">Research Interests</h2>
 
-        <div class="grid">
+        <div class="grid grid-three">
           <article class="card">
-            <span class="tag">Data in Brief · 2024</span>
-
-            <h3>Bangla News Article Dataset</h3>
-
+            <h3>Quantum Computing</h3>
             <p>
-              A. M. Saad, U. N. Mahi, M. S. Salim, and S. I. Hossain.
-              <em>Data in Brief</em>, 57, 110874.
-            </p>
-
-            <p>
-              <a href="research.html#publications">
-                View all publications
-              </a>
+              Quantum algorithms, quantum machine learning, and practical
+              development of quantum-enabled computing systems.
             </p>
           </article>
 
           <article class="card">
-            <span class="tag">arXiv · 2025</span>
-
-            <h3>
-              Evaluating YOLO Architectures for Real-Time Vehicle Detection
-            </h3>
-
+            <h3>Quantum Software Engineering</h3>
             <p>
-              Research on evaluating YOLO architectures for vehicle detection
-              in complex urban settings in Bangladesh.
+              Methods, tools, testing practices, and software-engineering
+              principles for reliable quantum applications.
             </p>
+          </article>
 
+          <article class="card">
+            <h3>Autonomous Systems</h3>
             <p>
-              <a
-                href="https://arxiv.org/abs/2509.05652"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Read on arXiv
-              </a>
+              Intelligent perception, decision-making, and dependable software
+              for autonomous and real-time systems.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Trustworthy AI</h3>
+            <p>
+              LLM safety, hallucination detection and mitigation, reliability,
+              and responsible model behavior.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>LLM Evaluation</h3>
+            <p>
+              Evaluation design, factual reliability, robustness, and reasoning
+              capabilities and limitations of language models.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Applied Machine Learning</h3>
+            <p>
+              Computer vision, time-series modeling, and machine-learning
+              methods for scientific and real-world data.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="container section">
-      <h2 class="section-heading">Selected projects</h2>
-
-      <div class="grid">
-        <article class="card">
-          <span class="tag">Quantum machine learning</span>
-
-          <h3>MNIST Image Classification with QNN</h3>
-
-          <p>
-            A hybrid quantum neural network workflow for handwritten-digit
-            classification using PyTorch and the Classiq SDK.
-          </p>
-
-          <p>
-            <a href="projects.html">View project details</a>
-          </p>
-        </article>
-
-        <article class="card">
-          <span class="tag">Quantum computing</span>
-
-          <h3>Introduction to Quantum Chemistry Notebook</h3>
-
-          <p>
-            A learning-oriented notebook covering encoding, mapping,
-            variational quantum eigensolvers, and quantum phase estimation.
-          </p>
-
-          <p>
-            <a href="projects.html">View project details</a>
-          </p>
-        </article>
-      </div>
-    </section>
-
     <section class="section-alt">
       <div class="container">
-        <h2 class="section-heading">Academic background</h2>
+        <h2 class="section-heading">Selected Work</h2>
 
         <div class="item-list">
           <article class="item">
-            <h3>PhD Student in Computer Science</h3>
-            <p class="meta">Fall 2026 – Present</p>
+            <h3>Bangla News Article Dataset</h3>
+            <p class="meta">Data in Brief, 2024</p>
+            <p>A. M. Saad, U. N. Mahi, M. S. Salim, and S. I. Hossain.</p>
+          </article>
+
+          <article class="item">
+            <h3>Vehicle Detection in Complex Urban Settings</h3>
             <p>
-              Department of Computer Science, Tulane University · Researcher in
-              Dr. Jiyuan Wang's lab.
+              Research on evaluating YOLO architectures for vehicle detection
+              in Bangladesh.
             </p>
           </article>
 
           <article class="item">
-            <h3>Former Lecturer</h3>
-            <p class="meta">Premier University, Chattogram</p>
+            <h3>MNIST Image Classification with QNN</h3>
             <p>
-              Previously taught courses in artificial intelligence, database
-              management systems, cybersecurity, microprocessors and
-              microcontrollers, and mobile application development.
+              A hybrid quantum neural network workflow for handwritten-digit
+              classification using PyTorch and the Classiq SDK.
             </p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-heading">Teaching</h2>
+
+        <p>
+          Previously taught courses in artificial intelligence, database
+          management systems, cybersecurity, microprocessors and
+          microcontrollers, and mobile application development.
+        </p>
+
+        <p>
+          Learn more about my <a href="teaching.html">teaching experience</a>
+          or view my <a href="cv.html">curriculum vitae</a>.
+        </p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Asif Mohammed Saad · Academic Portfolio</p>
+      <p>
+        © 2026 Asif Mohammed Saad · PhD Student, Department of Computer Science,
+        Tulane University
+      </p>
     </div>
   </footer>
 </body>
