@@ -37,6 +37,17 @@
         "@type": "Organization",
         "name": "Tulane University"
       },
+      "workLocation": {
+        "@type": "Place",
+        "name": "Paul Hall, Room 309",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Paul Hall, Room 309, Tulane University Uptown Campus",
+          "addressLocality": "New Orleans",
+          "addressRegion": "LA",
+          "addressCountry": "US"
+        }
+      },
       "description": "PhD student in Computer Science at Tulane University working on quantum software engineering, quantum algorithms, and quantum testing.",
       "knowsAbout": [
         "Quantum Software Engineering",
@@ -55,7 +66,24 @@
 </head>
 
 <body>
-  <div class="wrap">
+
+  <nav class="navbar" aria-label="Section navigation">
+    <div class="navbar-inner">
+      <a class="nav-name" href="#top">Asif Mohammed Saad</a>
+
+      <ul class="nav-sections">
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrap" id="top">
 
     <header class="intro">
       <img class="photo" src="assets/images/profile.jpg"
@@ -65,98 +93,106 @@
         <h1>Asif Mohammed Saad</h1>
 
         <p class="role">
-          PhD Student, Department of Computer Science, Tulane University
+          I am a PhD student in the Department of Computer Science at Tulane
+          University.
         </p>
 
         <ul class="links">
           <li><a href="mailto:asaad2@tulane.edu">Email</a></li>
           <li><a href="assets/Asif_Saad_CV.pdf">CV</a></li>
-          <li><a href="https://scholar.google.com/citations?user=BcD0Cy8AAAAJ&hl=en" rel="noopener noreferrer">Google Scholar</a></li>
+          <li><a href="REPLACE_WITH_YOUR_SCHOLAR_URL" rel="noopener noreferrer">Google Scholar</a></li>
           <li><a href="https://github.com/asif-saad" rel="noopener noreferrer">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/asifmohammedsaad/" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="REPLACE_WITH_YOUR_LINKEDIN_URL" rel="noopener noreferrer">LinkedIn</a></li>
         </ul>
       </div>
     </header>
 
-    <section>
+    <section id="about">
       <h2>About</h2>
 
       <p class="bio">
         I began my PhD in Computer Science at Tulane University in August 2026.
-        I work on quantum software engineering, quantum algorithms, and
-        quantum testing, advised by
-        <a href="https://wjy99-c.github.io/" rel="noopener noreferrer">Dr. Jiyuan Wang</a>.
+        I work on quantum software engineering, quantum algorithms, and quantum
+        testing, advised by
+        <a href="REPLACE_WITH_ADVISOR_PAGE_URL" rel="noopener noreferrer">Dr. Jiyuan Wang</a>.
         My other interests run to automated system design for dense,
         unstructured traffic, weather prediction and analysis, and running small
-        language models on edge devices. Before Tulane I was a Lecturer in
-        Computer Science and Engineering at Premier University, Chittagong.
+        language models on edge devices. Before coming to Tulane I was a
+        Lecturer in Computer Science and Engineering at Premier University,
+        Chittagong.
       </p>
     </section>
 
-    <section>
+    <section id="news">
       <h2>News</h2>
 
       <ul class="news">
         <li>
           <span class="date">Aug 2026</span>
           <span>
-            Started the PhD in Computer Science at Tulane University with the
-            Fall 2026 cohort, joining Dr. Jiyuan Wang's lab.
+            I started my PhD in Computer Science at Tulane University with the
+            Fall 2026 cohort, and I joined Dr. Jiyuan Wang's lab.
           </span>
         </li>
 
         <li>
           <span class="date">May 2026</span>
           <span>
-            Received a $2,000-equivalent research grant from the Institute of
-            Research and Publications, Premier University, Chattogram, for
-            <em>Autonomous Navigation in Bangladesh: A Multi-Camera
-            Perception-to-Action Approach</em>.
+            I received a research grant equivalent to $2,000 from the Institute
+            of Research and Publications at Premier University, Chattogram, for
+            a project titled <em>Autonomous Navigation in Bangladesh: A
+            Multi-Camera Perception-to-Action Approach</em>.
           </span>
         </li>
 
         <li>
           <span class="date">Sep 2025</span>
           <span>
-            Preprint on hair artifact removal in skin lesion analysis posted to
+            My preprint on hair artifact removal in skin lesion analysis was
+            posted to
             <a href="https://arxiv.org/abs/2509.02156" rel="noopener noreferrer">arXiv</a>.
           </span>
         </li>
       </ul>
     </section>
 
-    <section>
+    <section id="research">
       <h2>Research Interests</h2>
 
       <ul class="interests">
         <li>
-          <strong>Quantum software engineering</strong> &mdash; development
-          practices, tooling, and benchmarking for dependable quantum programs
+          <strong>Quantum software engineering.</strong> I study the development
+          practices, tooling, and benchmarking that quantum programs need before
+          anyone can depend on them.
         </li>
         <li>
-          <strong>Quantum algorithms</strong> &mdash; design and analysis of
-          algorithms that make real use of quantum resources
+          <strong>Quantum algorithms.</strong> I am interested in designing and
+          analyzing algorithms that make genuine use of quantum resources rather
+          than merely invoking them.
         </li>
         <li>
-          <strong>Quantum testing</strong> &mdash; verifying correctness in
-          programs whose output is probabilistic and expensive to observe
+          <strong>Quantum testing.</strong> I work on how to verify correctness
+          in programs whose output is probabilistic and expensive to observe.
         </li>
         <li>
-          <strong>Automated system design</strong> &mdash; perception and
-          control for dense, unstructured traffic
+          <strong>Automated system design.</strong> I am interested in
+          perception and control for dense, unstructured traffic, where the
+          assumptions behind systems built elsewhere tend to break down.
         </li>
         <li>
-          <strong>Weather prediction and analysis</strong> &mdash; forecasting
-          and modeling of environmental and climate indicators
+          <strong>Weather prediction and analysis.</strong> I work on
+          forecasting and modeling environmental and climate indicators from
+          observational data.
         </li>
         <li>
-          <strong>Small language models on edge devices</strong> &mdash;
-          running capable models under tight compute and memory budgets
+          <strong>Small language models on edge devices.</strong> I am
+          interested in what it takes to run capable models under tight compute
+          and memory budgets.
         </li>
       </ul>
     </section>
 
-    <section>
+    <section id="publications">
       <h2>Publications</h2>
 
       <div class="entry">
@@ -165,11 +201,12 @@
           Revolutionize Machine Learning
         </h3>
         <p class="authors">
-          <strong>A. M. Saad</strong>, K. E. Rahman, M. F. Shahriyar, Y. Gulora,
-          H. M. Hossain
+          This paper was written with <strong>A. M. Saad</strong>, K. E. Rahman,
+          M. F. Shahriyar, Y. Gulora, and H. M. Hossain.
         </p>
         <p class="venue">
-          Int. Conf. on Big Data, IoT and Machine Learning, pp. 619&ndash;630, 2025
+          It appeared in the Proceedings of the International Conference on Big
+          Data, IoT and Machine Learning, pages 619 to 630, in 2025.
         </p>
       </div>
 
@@ -179,9 +216,12 @@
           Skin Lesion Analysis
         </h3>
         <p class="authors">
-          <strong>A. M. Saad</strong>, U. N. Mahi
+          This paper was written with <strong>A. M. Saad</strong> and
+          U. N. Mahi.
         </p>
-        <p class="venue">arXiv:2509.02156, 2025</p>
+        <p class="venue">
+          It was posted to arXiv as preprint 2509.02156 in September 2025.
+        </p>
         <p class="refs">
           <a href="https://arxiv.org/abs/2509.02156" rel="noopener noreferrer">arXiv</a>
           <a href="https://arxiv.org/pdf/2509.02156" rel="noopener noreferrer">PDF</a>
@@ -194,11 +234,13 @@
           Detection in Urban Environments of Bangladesh
         </h3>
         <p class="authors">
-          H. M. Hossain, P. Nath, M. N. Mahi, I. Uddin, I. J. Eiste,
-          S. N. R. Ratul, M. N. U. Mozumdar, <strong>A. M. Saad</strong>,
-          M. T. Hossain
+          This paper was written with H. M. Hossain, P. Nath, M. N. Mahi,
+          I. Uddin, I. J. Eiste, S. N. R. Ratul, M. N. U. Mozumdar,
+          <strong>A. M. Saad</strong>, and M. T. Hossain.
         </p>
-        <p class="venue">arXiv:2509.05652, 2025</p>
+        <p class="venue">
+          It was posted to arXiv as preprint 2509.05652 in September 2025.
+        </p>
         <p class="refs">
           <a href="https://arxiv.org/abs/2509.05652" rel="noopener noreferrer">arXiv</a>
           <a href="https://arxiv.org/pdf/2509.05652" rel="noopener noreferrer">PDF</a>
@@ -211,21 +253,30 @@
           Complex Urban Settings of Bangladesh
         </h3>
         <p class="authors">
-          H. M. Hossain, P. Nath, M. I. Uddin, I. J. Eiste, M. N. Mahi,
-          S. N. R. Ratul, M. N. U. Mozumdar, <strong>A. M. Saad</strong>,
-          M. T. Hossain
+          This paper was written with H. M. Hossain, P. Nath, M. I. Uddin,
+          I. J. Eiste, M. N. Mahi, S. N. R. Ratul, M. N. U. Mozumdar,
+          <strong>A. M. Saad</strong>, and M. T. Hossain.
         </p>
         <p class="venue">
-          28th Int. Conf. on Computer and Information Technology (ICCIT), 2025
+          It appeared in the Proceedings of the 28th International Conference on
+          Computer and Information Technology in 2025.
         </p>
       </div>
 
       <div class="entry">
         <h3>Bangla News Article Dataset</h3>
         <p class="authors">
-          <strong>A. M. Saad</strong>, U. N. Mahi, M. S. Salim, S. I. Hossain
+          This paper was written with <strong>A. M. Saad</strong>, U. N. Mahi,
+          M. S. Salim, and S. I. Hossain.
         </p>
-        <p class="venue">Data in Brief, vol. 57, article 110874, 2024</p>
+        <p class="venue">
+          It was published in Data in Brief, volume 57, article 110874, in 2024.
+        </p>
+        <p class="note">
+          The paper introduces a public corpus of Bangla news articles that
+          supports text classification, summarization, and language modeling
+          research in a low-resource language.
+        </p>
         <p class="refs">
           <a href="https://doi.org/10.1016/j.dib.2024.110874" rel="noopener noreferrer">DOI</a>
         </p>
@@ -238,15 +289,17 @@
           Regression
         </h3>
         <p class="authors">
-          <strong>A. M. Saad</strong>, R. Mahmud, S. Das
+          This paper was written with <strong>A. M. Saad</strong>, R. Mahmud,
+          and S. Das.
         </p>
         <p class="venue">
-          Int. Conf. on Big Data, IoT and Machine Learning, pp. 809&ndash;823, 2023
+          It appeared in the Proceedings of the International Conference on Big
+          Data, IoT and Machine Learning, pages 809 to 823, in 2023.
         </p>
       </div>
     </section>
 
-    <section>
+    <section id="projects">
       <h2>Projects</h2>
 
       <div class="entry">
@@ -254,20 +307,26 @@
           Autonomous Navigation in Bangladesh: A Multi-Camera
           Perception-to-Action Approach
         </h3>
-        <p class="venue">IRP grant, Premier University Chattogram, 2026</p>
+        <p class="venue">
+          This project is funded by a grant from the Institute of Research and
+          Publications at Premier University, Chattogram, awarded in 2026.
+        </p>
         <p class="note">
-          A multi-camera perception-to-action pipeline for road conditions where
-          dense traffic and unstructured lane behavior break assumptions built
-          into systems developed elsewhere.
+          I am building a multi-camera perception-to-action pipeline for road
+          conditions in which dense traffic and unstructured lane behavior break
+          the assumptions built into systems developed elsewhere.
         </p>
       </div>
 
       <div class="entry">
         <h3>MNIST Classification with Quantum Neural Networks</h3>
-        <p class="venue">PyTorch, Classiq SDK</p>
+        <p class="venue">
+          I built this project using PyTorch and the Classiq SDK.
+        </p>
         <p class="note">
-          A hybrid quantum neural network for digit classification, covering
-          data encoding, circuit design, training, and evaluation.
+          It is a hybrid quantum neural network for digit classification, and it
+          covers the full path from data encoding through circuit design,
+          training, and evaluation.
         </p>
         <p class="refs">
           <a href="REPLACE_WITH_REPO_URL" rel="noopener noreferrer">Code</a>
@@ -276,10 +335,13 @@
 
       <div class="entry">
         <h3>Quantum Algorithms Notebooks</h3>
-        <p class="venue">Variational algorithms, quantum simulation</p>
+        <p class="venue">
+          These notebooks cover variational algorithms and quantum simulation.
+        </p>
         <p class="note">
-          Implementations of quantum data encoding, qubit mapping, variational
-          quantum eigensolvers, and quantum phase estimation.
+          I implemented quantum data encoding, qubit mapping, variational
+          quantum eigensolvers, and quantum phase estimation, and documented
+          each one as I worked through it.
         </p>
         <p class="refs">
           <a href="REPLACE_WITH_REPO_URL" rel="noopener noreferrer">Code</a>
@@ -287,23 +349,49 @@
       </div>
     </section>
 
-    <section>
+    <section id="teaching">
       <h2>Teaching</h2>
 
       <p>
         As a Lecturer at Premier University, Chittagong, I taught Artificial
         Intelligence, Database Management Systems, Cybersecurity,
         Microprocessors and Microcontrollers, and Mobile Application
-        Development. I am not currently teaching while I focus on doctoral
-        coursework and research.
+        Development. I am not teaching at the moment, because I am focusing on
+        my doctoral coursework and research, but I remain interested in teaching
+        and mentoring opportunities.
       </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <p>
+        I welcome correspondence about research collaboration, quantum software
+        engineering, and the other topics listed above. The best way to reach me
+        is by email, and you are also welcome to stop by my office.
+      </p>
+
+      <ul class="contact-list">
+        <li>
+          <strong>Office.</strong> You can find me in Room 309, Paul Hall, on
+          the Tulane University Uptown Campus in New Orleans, Louisiana.
+        </li>
+        <li>
+          <strong>Academic email.</strong> Write to me at
+          <a href="mailto:asaad2@tulane.edu">asaad2@tulane.edu</a>.
+        </li>
+        <li>
+          <strong>Personal email.</strong> You can also reach me at
+          <a href="mailto:asifsaad730@gmail.com">asifsaad730@gmail.com</a>.
+        </li>
+      </ul>
     </section>
 
     <footer>
       <p>
-        Asif Mohammed Saad &middot;
-        <a href="mailto:asaad2@tulane.edu">asaad2@tulane.edu</a> &middot;
-        Department of Computer Science, Tulane University, New Orleans
+        This page belongs to Asif Mohammed Saad, a PhD student in the Department
+        of Computer Science at Tulane University, New Orleans. You can reach him
+        at <a href="mailto:asaad2@tulane.edu">asaad2@tulane.edu</a>.
       </p>
     </footer>
 

@@ -29,11 +29,78 @@ a:hover, a:focus { color: var(--navy); }
 
 img { display: block; max-width: 100%; height: auto; }
 
+
+/* =========================================================
+   Sticky section navigation
+   ========================================================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(247, 245, 240, 0.94);
+  border-bottom: 1px solid var(--border);
+}
+
+@supports (backdrop-filter: blur(8px)) {
+  .navbar { backdrop-filter: saturate(150%) blur(8px); }
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+  width: min(900px, calc(100% - 48px));
+  min-height: 56px;
+  margin: 0 auto;
+  padding: 8px 0;
+}
+
+.nav-name {
+  color: var(--navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-sections a {
+  display: inline-block;
+  padding: 3px 0;
+  border-bottom: 2px solid transparent;
+  color: var(--text);
+  font-size: 0.89rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-sections a:hover,
+.nav-sections a:focus-visible {
+  color: var(--navy);
+  border-bottom-color: var(--copper);
+}
+
+/* Anchored sections must clear the sticky bar */
+section { scroll-margin-top: 76px; }
+
+#top { scroll-margin-top: 0; }
+
 /* One column. Comfortable on a laptop, not a ribbon on a big screen. */
 .wrap {
   width: min(900px, calc(100% - 48px));
   margin: 0 auto;
-  padding: 88px 0 76px;
+  padding: 52px 0 76px;
 }
 
 /* --- Header: photo beside name --- */
@@ -160,6 +227,15 @@ h3 {
 
 .refs a:hover { background: #E2EADF; border-color: var(--steel); }
 
+/* --- Contact --- */
+.contact-list {
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list li { margin-bottom: 10px; }
+
 /* --- Interests --- */
 .interests { margin: 0; padding-left: 19px; }
 .interests li { margin-bottom: 7px; }
@@ -177,6 +253,18 @@ footer p { margin: 0; }
 
 /* --- Phone --- */
 @media (max-width: 600px) {
+  .navbar-inner {
+    width: min(100% - 32px, 900px);
+    justify-content: flex-start;
+    gap: 4px 14px;
+  }
+
+  .nav-sections { gap: 4px 14px; }
+
+  .nav-sections a { font-size: 0.85rem; }
+
+  section { scroll-margin-top: 108px; }
+
   .wrap {
     width: min(100% - 32px, 900px);
     padding: 40px 0 52px;
