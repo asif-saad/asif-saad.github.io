@@ -7,6 +7,7 @@
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
 <link rel="canonical" href="/blog/PhD-offer-US/">
 <meta name="theme-color" content="#1f4e78">
+<meta name="color-scheme" content="light dark">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Quantum Computing PhD Openings in the U.S. 2027 | Professors & Labs">
 <meta property="og:description" content="Curated list of U.S. quantum computing PhD openings for Spring and Fall 2027: universities, research domains, professors, and links. Know a professor not listed? Add them via the form.">
@@ -224,56 +225,86 @@
  ]
 }</script>
 <style>
-body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:24px;color:#222;background:#fafafa;line-height:1.5}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;margin:0;padding:clamp(12px,4vw,32px);color:#222;background:#fafafa;line-height:1.55;font-size:clamp(15px,1.2vw + 12px,17px)}
 .wrap{max-width:1100px;margin:auto}
-h1{font-size:26px;margin:0 0 8px} h2{font-size:19px;margin:28px 0 8px}
-p{margin:0 0 12px} .note{color:#555;font-size:14px}
-label{display:block;font-size:14px;margin-bottom:4px}
-input{padding:8px 10px;width:100%;max-width:340px;margin-bottom:12px;border:1px solid #bbb;border-radius:6px}
-.tw{overflow-x:auto}
+h1{font-size:clamp(22px,4.5vw,32px);line-height:1.2;margin:0 0 10px}
+h2{font-size:clamp(18px,3vw,22px);margin:28px 0 10px}
+p{margin:0 0 12px}.note{color:#555;font-size:.875em}
+label{display:block;font-size:.9em;margin-bottom:4px}
+input{padding:12px;width:100%;max-width:420px;margin-bottom:14px;border:1px solid #bbb;border-radius:8px;font-size:1em}
+a{color:#0b5cad;overflow-wrap:anywhere}a:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid #0b5cad;outline-offset:2px}
 table{border-collapse:collapse;width:100%;background:#fff}
-th,td{border:1px solid #ddd;padding:10px;text-align:left;font-size:14px;vertical-align:top}
-thead th{background:#1f4e78;color:#fff}
-tbody th{font-weight:600;background:#fff}
-tbody tr:nth-child(even) td,tbody tr:nth-child(even) th{background:#f4f8fb}
-a{color:#0b5cad} a:focus,input:focus{outline:2px solid #0b5cad}
-details{background:#fff;border:1px solid #ddd;border-radius:6px;padding:10px 12px;margin-bottom:8px}
+caption{text-align:left;padding-bottom:6px}
+th,td{border:1px solid #ddd;padding:10px 12px;text-align:left;vertical-align:top}
+thead th{background:#1f4e78;color:#fff;position:sticky;top:0}
+tbody th{font-weight:600}
+tbody tr:nth-child(even) th,tbody tr:nth-child(even) td{background:#f4f8fb}
+details{background:#fff;border:1px solid #ddd;border-radius:8px;padding:12px 14px;margin-bottom:8px}
 summary{cursor:pointer;font-weight:600}
-.submit{background:#fff;border:1px solid #ddd;border-left:4px solid #1f4e78;border-radius:6px;padding:12px 16px;margin:20px 0}
-.btn{display:inline-block;background:#1f4e78;color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:600}
+details p{margin:8px 0 0}
+.submit{background:#fff;border:1px solid #ddd;border-left:4px solid #1f4e78;border-radius:8px;padding:14px 18px;margin:20px 0}
+.btn{display:inline-block;background:#1f4e78;color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:600;text-align:center}
 .btn:hover{background:#163a59}
+.empty{display:none;padding:12px;background:#fff;border:1px solid #ddd;border-radius:8px}
+@media (max-width:760px){
+ .btn{display:block;width:100%}
+ table,thead,tbody,tr,th,td{display:block;width:100%}
+ thead{position:absolute;left:-9999px}
+ table{background:transparent}
+ tbody tr{background:#fff;border:1px solid #ddd;border-radius:10px;margin-bottom:12px;padding:6px 0;overflow:hidden}
+ tbody tr:nth-child(even) th,tbody tr:nth-child(even) td{background:#fff}
+ th,td{border:0;border-bottom:1px solid #eee;padding:8px 14px}
+ tbody tr>*:last-child{border-bottom:0}
+ tbody th{background:#1f4e78!important;color:#fff;font-size:1.02em;border-bottom:0;margin-top:-6px;margin-bottom:6px}
+ td::before{content:attr(data-label);display:block;font-size:.75em;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#555}
+ tbody th::before{content:none}
+ caption{position:absolute;left:-9999px}
+}
+@media (min-width:761px) and (max-width:980px){th,td{padding:8px;font-size:.9em}}
+@media (prefers-reduced-motion:no-preference){.btn{transition:background .2s}}
+@media (prefers-color-scheme:dark){
+ body{background:#121212;color:#e8e8e8}.note{color:#aaa}a{color:#7db7ff}
+ table,details,.submit,tbody tr,.empty{background:#1c1c1c;border-color:#333}
+ th,td{border-color:#333}tbody tr:nth-child(even) th,tbody tr:nth-child(even) td{background:#222}
+ input{background:#1c1c1c;color:#eee;border-color:#444}td::before{color:#aaa}
+ thead th,tbody th{background:#2a5d8f!important}.btn{background:#2a5d8f;color:#fff}
+ @media (max-width:760px){tbody tr:nth-child(even) th,tbody tr:nth-child(even) td{background:#1c1c1c}}
+}
 </style></head>
 <body><div class="wrap"><main>
 <header>
 <h1>Quantum Computing PhD Openings in the U.S. (2027)</h1>
-<p>This page lists U.S. professors recruiting PhD students in quantum computing and related quantum science for <strong>Spring and Fall 2027</strong>. Each row links to the professor's profile and, where available, the original recruitment post.</p>
+<p>This page lists U.S. professors recruiting PhD students in quantum computing and related quantum science for <strong>Spring and Fall 2027</strong>. Each entry links to the professor's profile and, where available, the original recruitment post.</p>
 <p class="note">Last updated <time datetime="2026-10-07">October 7, 2026</time>. Confirm funding, deadlines, and international eligibility with the professor and the official program page.</p>
 </header>
 <section class="submit" aria-labelledby="submit">
-<h2 id="submit">Know a professor who is not listed?</h2>
+<h2 id="submit" style="margin-top:0">Know a professor who is not listed?</h2>
 <p>Help keep this list complete. If you know a professor recruiting quantum computing PhD students who is not listed here, please add them through the Google Form.</p>
-<p><a class="btn" href="https://forms.gle/Ci95eso84gJd9JEGA" target="_blank" rel="noopener noreferrer">Add a professor via Google Form</a></p>
+<p style="margin-bottom:0"><a class="btn" href="https://forms.gle/Ci95eso84gJd9JEGA" target="_blank" rel="noopener noreferrer">Add a professor via Google Form</a></p>
 </section>
 <section aria-labelledby="list">
 <h2 id="list">Professors and universities recruiting quantum PhD students</h2>
 <label for="q">Filter by university, domain, or professor</label>
 <input id="q" type="search" placeholder="e.g. networking, Colorado, superconducting">
-<div class="tw"><table id="t">
+<table id="t">
 <caption class="note">U.S. quantum computing PhD opportunities for 2027</caption>
 <thead><tr><th scope="col">University</th><th scope="col">Quantum computing domain</th><th scope="col">Professor</th><th scope="col">Target start</th><th scope="col">Links</th></tr></thead>
 <tbody>
-<tr><th scope="row">University of Colorado Boulder</th><td>Quantum architecture, systems, and reliability</td><td>Ramin Ayanzadeh</td><td>Fall 2027</td><td><a href="https://www.colorado.edu/cs/ramin-ayanzadeh" target="_blank" rel="noopener noreferrer">Ramin Ayanzadeh profile</a> &middot; <a href="https://www.linkedin.com/posts/ayanzadeh_phd-phdadmissions-phdopportunity-activity-7512000311264219136-uIVj" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
-<tr><th scope="row">Kennesaw State University</th><td>Quantum networking and distributed quantum computing</td><td>Huayue Gu</td><td>Fall 2027</td><td><a href="https://gghhhyy.github.io" target="_blank" rel="noopener noreferrer">Huayue Gu profile</a> &middot; <a href="https://www.linkedin.com/posts/hgu5_phd-quantum-phdpositions-activity-7466961464067694592-PrM0" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
-<tr><th scope="row">Miami University (Ohio)</th><td>Secure and distributed quantum computing systems</td><td>Hui Zhong</td><td>Spring/Fall 2027</td><td><a href="https://www.linkedin.com/posts/hui-zhong-62a3b52b6_hui-zhong-quantum-computing-systems-privacy-activity-7476882129511960576-ZSxC" target="_blank" rel="noopener noreferrer">Hui Zhong profile</a></td></tr>
-<tr><th scope="row">Rensselaer Polytechnic Institute</th><td>Hybrid quantum-classical optimization for transportation</td><td>Ruimin Ke</td><td>Spring/Fall 2027</td><td><a href="https://faculty.rpi.edu/ruimin-ke" target="_blank" rel="noopener noreferrer">Ruimin Ke profile</a> &middot; <a href="https://www.linkedin.com/posts/ruimin-ke-44794893_rensselaer-polytechnic-institute-activity-7494406408696795136-m3Zt" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
-<tr><th scope="row">Colorado School of Mines</th><td>Superconducting circuits, spin defects, hybrid quantum systems</td><td>Zihuai Zhang</td><td>Fall 2027</td><td><a href="https://physics.mines.edu/project/zihuai-zhang/" target="_blank" rel="noopener noreferrer">Zihuai Zhang profile</a> &middot; <a href="https://www.linkedin.com/posts/zihuai-zhang-4a1170100_quantumscience-quantumengineering-superconductingcircuits-activity-7459624" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
-<tr><th scope="row">Florida International University</th><td>Quantum computing systems and architecture</td><td>Abdel-Hameed Badawy</td><td>Confirm term</td><td><a href="https://discovery.fiu.edu/display/person-badawy-abdel-hameed" target="_blank" rel="noopener noreferrer">Abdel-Hameed Badawy profile</a> &middot; <a href="https://www.linkedin.com/posts/asifmohammedsaad_phd-phdopportunity-quantumcomputing-activity-7510135119970639872-LUpF" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
-<tr><th scope="row">Florida International University</th><td>Quantum photonics, sensing, and metamaterials</td><td>Alex Krasnok</td><td>Confirm term</td><td><a href="https://krasnokqtm.com/prof-krasnok.html" target="_blank" rel="noopener noreferrer">Alex Krasnok profile</a> &middot; <a href="https://www.linkedin.com/posts/alexkrasnok_quantumtechnology-photonics-electricalengineering-activity-7422063210599702529-o0kL" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
-<tr><th scope="row">University of Utah</th><td>Hybrid quantum-classical computing for engineering</td><td>Pania Newell</td><td>Confirm international eligibility</td><td><a href="https://newell.mech.utah.edu/" target="_blank" rel="noopener noreferrer">Pania Newell profile</a> &middot; <a href="https://www.linkedin.com/posts/pania-newell-a191a4190_are-you-in-the-us-and-looking-for-an-ms-activity-7497064378043904000-O3pP" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
-<tr><th scope="row">University of the District of Columbia</th><td>Molecular spintronics and quantum devices</td><td>Pawan Tyagi</td><td>Spring 2027 (likely closed)</td><td><a href="https://www.udc.edu/directory/profiles/seas/pawan-tyagi" target="_blank" rel="noopener noreferrer">Pawan Tyagi profile</a> &middot; <a href="https://www.linkedin.com/posts/pawan-tyagi-61374914_phd-research-opportunity-molecular-spintronics-activity-7504290137262972928" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
-<tr><th scope="row">University of Idaho</th><td>Quantum error correction and quantum information theory</td><td>Yale Fan</td><td>Fall 2027</td><td><a href="https://www.uidaho.edu/people/yalefan" target="_blank" rel="noopener noreferrer">Yale Fan profile</a> &middot; <a href="https://www.quantiki.org/position/funded-phd-position-theoretical-physics-and-quantum-information-science-university-idaho" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
-</tbody></table></div>
-<p class="note">Missing a professor? <a href="https://forms.gle/Ci95eso84gJd9JEGA" target="_blank" rel="noopener noreferrer">Add them through the Google Form</a>.</p>
+<tr><th scope="row" data-label="University">University of Colorado Boulder</th><td data-label="Domain">Quantum architecture, systems, and reliability</td><td data-label="Professor">Ramin Ayanzadeh</td><td data-label="Start">Fall 2027</td><td data-label="Links"><a href="https://www.colorado.edu/cs/ramin-ayanzadeh" target="_blank" rel="noopener noreferrer">Profile</a> &middot; <a href="https://www.linkedin.com/posts/ayanzadeh_phd-phdadmissions-phdopportunity-activity-7512000311264219136-uIVj" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
+<tr><th scope="row" data-label="University">Kennesaw State University</th><td data-label="Domain">Quantum networking and distributed quantum computing</td><td data-label="Professor">Huayue Gu</td><td data-label="Start">Fall 2027</td><td data-label="Links"><a href="https://gghhhyy.github.io" target="_blank" rel="noopener noreferrer">Profile</a> &middot; <a href="https://www.linkedin.com/posts/hgu5_phd-quantum-phdpositions-activity-7466961464067694592-PrM0" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
+<tr><th scope="row" data-label="University">Miami University (Ohio)</th><td data-label="Domain">Secure and distributed quantum computing systems</td><td data-label="Professor">Hui Zhong</td><td data-label="Start">Spring/Fall 2027</td><td data-label="Links"><a href="https://www.linkedin.com/posts/hui-zhong-62a3b52b6_hui-zhong-quantum-computing-systems-privacy-activity-7476882129511960576-ZSxC" target="_blank" rel="noopener noreferrer">Profile</a></td></tr>
+<tr><th scope="row" data-label="University">Rensselaer Polytechnic Institute</th><td data-label="Domain">Hybrid quantum-classical optimization for transportation</td><td data-label="Professor">Ruimin Ke</td><td data-label="Start">Spring/Fall 2027</td><td data-label="Links"><a href="https://faculty.rpi.edu/ruimin-ke" target="_blank" rel="noopener noreferrer">Profile</a> &middot; <a href="https://www.linkedin.com/posts/ruimin-ke-44794893_rensselaer-polytechnic-institute-activity-7494406408696795136-m3Zt" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
+<tr><th scope="row" data-label="University">Colorado School of Mines</th><td data-label="Domain">Superconducting circuits, spin defects, hybrid quantum systems</td><td data-label="Professor">Zihuai Zhang</td><td data-label="Start">Fall 2027</td><td data-label="Links"><a href="https://physics.mines.edu/project/zihuai-zhang/" target="_blank" rel="noopener noreferrer">Profile</a> &middot; <a href="https://www.linkedin.com/posts/zihuai-zhang-4a1170100_quantumscience-quantumengineering-superconductingcircuits-activity-7459624" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
+<tr><th scope="row" data-label="University">Florida International University</th><td data-label="Domain">Quantum computing systems and architecture</td><td data-label="Professor">Abdel-Hameed Badawy</td><td data-label="Start">Confirm term</td><td data-label="Links"><a href="https://discovery.fiu.edu/display/person-badawy-abdel-hameed" target="_blank" rel="noopener noreferrer">Profile</a> &middot; <a href="https://www.linkedin.com/posts/asifmohammedsaad_phd-phdopportunity-quantumcomputing-activity-7510135119970639872-LUpF" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
+<tr><th scope="row" data-label="University">Florida International University</th><td data-label="Domain">Quantum photonics, sensing, and metamaterials</td><td data-label="Professor">Alex Krasnok</td><td data-label="Start">Confirm term</td><td data-label="Links"><a href="https://krasnokqtm.com/prof-krasnok.html" target="_blank" rel="noopener noreferrer">Profile</a> &middot; <a href="https://www.linkedin.com/posts/alexkrasnok_quantumtechnology-photonics-electricalengineering-activity-7422063210599702529-o0kL" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
+<tr><th scope="row" data-label="University">University of Utah</th><td data-label="Domain">Hybrid quantum-classical computing for engineering</td><td data-label="Professor">Pania Newell</td><td data-label="Start">Confirm international eligibility</td><td data-label="Links"><a href="https://newell.mech.utah.edu/" target="_blank" rel="noopener noreferrer">Profile</a> &middot; <a href="https://www.linkedin.com/posts/pania-newell-a191a4190_are-you-in-the-us-and-looking-for-an-ms-activity-7497064378043904000-O3pP" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
+<tr><th scope="row" data-label="University">University of the District of Columbia</th><td data-label="Domain">Molecular spintronics and quantum devices</td><td data-label="Professor">Pawan Tyagi</td><td data-label="Start">Spring 2027 (likely closed)</td><td data-label="Links"><a href="https://www.udc.edu/directory/profiles/seas/pawan-tyagi" target="_blank" rel="noopener noreferrer">Profile</a> &middot; <a href="https://www.linkedin.com/posts/pawan-tyagi-61374914_phd-research-opportunity-molecular-spintronics-activity-7504290137262972928" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
+<tr><th scope="row" data-label="University">University of Idaho</th><td data-label="Domain">Quantum error correction and quantum information theory</td><td data-label="Professor">Yale Fan</td><td data-label="Start">Fall 2027</td><td data-label="Links"><a href="https://www.uidaho.edu/people/yalefan" target="_blank" rel="noopener noreferrer">Profile</a> &middot; <a href="https://www.quantiki.org/position/funded-phd-position-theoretical-physics-and-quantum-information-science-university-idaho" target="_blank" rel="noopener noreferrer">Opening post</a></td></tr>
+</tbody></table>
+<p id="none" class="empty" role="status">No matches. Try another keyword, or add a professor through the Google Form.</p>
+<p class="note" style="margin-top:12px">Missing a professor? <a href="https://forms.gle/Ci95eso84gJd9JEGA" target="_blank" rel="noopener noreferrer">Add them through the Google Form</a>.</p>
 </section>
 <section aria-labelledby="faq">
 <h2 id="faq">Frequently asked questions</h2>
@@ -286,5 +317,5 @@ summary{cursor:pointer;font-weight:600}
 <footer><p class="note">Compiled from public faculty pages and LinkedIn posts; details may change. Always verify at the source.</p></footer>
 </div>
 <script>
-document.getElementById('q').addEventListener('input',function(){var v=this.value.toLowerCase();document.querySelectorAll('#t tbody tr').forEach(function(r){r.style.display=r.textContent.toLowerCase().includes(v)?'':'none'})});
+document.getElementById('q').addEventListener('input',function(){var v=this.value.toLowerCase(),n=0;document.querySelectorAll('#t tbody tr').forEach(function(r){var m=r.textContent.toLowerCase().includes(v);r.style.display=m?'':'none';if(m)n++});document.getElementById('none').style.display=n?'none':'block'});
 </script></body></html>
