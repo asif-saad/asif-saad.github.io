@@ -29,6 +29,13 @@ a:hover, a:focus { color: var(--navy); }
 
 img { display: block; max-width: 100%; height: auto; }
 
+/* Justified body text; hyphenation keeps word gaps even on narrow screens */
+p, li {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
 
 /* =========================================================
    Sticky section navigation
